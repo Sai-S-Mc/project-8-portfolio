@@ -10,21 +10,19 @@ body {
 }
 
 header {
-  padding: 160px 20px;
+  padding: 160px 20px 0;
   background-color: #f148e92e;
 }
 header p {
   font-weight: var(--heading-font-weight);
-  font-size: 36px;
   opacity: 0.95;
 }
+
 h1 {
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
-  font-size: 96px;
 }
 header h2 {
-  font-size: 24px;
   font-weight: 400;
 }
 
@@ -45,6 +43,13 @@ header .primary-link:hover {
   color: #e03662;
 }
 
+.grid-title {
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.7;
+  font-style: italic;
+}
+
 .first-project,
 .second-project,
 .third-project {
@@ -55,10 +60,8 @@ header .primary-link:hover {
   text-align: left;
   padding: 80px 20px;
 }
-.project-description h2 {
-  font-size: 64px;
-}
 .project-description p {
+  font-size: 18px;
   opacity: 0.8;
 }
 
@@ -103,7 +106,7 @@ header .primary-link:hover {
 .third-project a:hover {
   background-color: #ffffe4;
   outline: 1px solid #ffff33;
-  color: #ffff00;
+  color: #d4d400;
 }
 .third-project .color-tab {
   border-right: 35px solid #ffff33;
@@ -111,6 +114,21 @@ header .primary-link:hover {
 }
 
 @media (min-width: 992px) {
+  header {
+    padding-bottom: 160px;
+  }
+  header p {
+    font-size: 36px;
+  }
+  h1 {
+    font-size: 96px;
+  }
+  header h2 {
+    font-size: 24px;
+  }
+  .project-description h2 {
+    font-size: 64px;
+  }
   .img-wrapper {
     display: flex !important;
     justify-content: space-around;
@@ -131,5 +149,35 @@ header .primary-link:hover {
   }
   .third-project:hover > .color-tab {
     border-right: 55px solid #ffff33;
+  }
+}
+
+@media (max-width: 991.5px) {
+  header {
+    padding-bottom: 80px;
+  }
+  header p {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  header h2 {
+    font-size: 24px;
+  }
+  .project-description {
+    text-align: center;
+  }
+  .project-description h2 {
+    font-size: 48px;
+  }
+  .first-project:hover > .color-tab {
+    border-right: 45px solid #ff073a;
+  }
+  .second-project:hover > .color-tab {
+    border-left: 45px solid #ff5e00;
+  }
+  .third-project:hover > .color-tab {
+    border-right: 45px solid #ffff33;
   }
 }
