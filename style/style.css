@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-family: var(--default-font);
 }
+
 header {
   padding: 160px 20px;
   background-color: #f148e92e;
@@ -15,15 +16,14 @@ header {
 header p {
   font-weight: var(--heading-font-weight);
   font-size: 36px;
+  opacity: 0.95;
 }
-
 h1 {
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
   font-size: 96px;
 }
-
-h2 {
+header h2 {
   font-size: 24px;
   font-weight: 400;
 }
@@ -31,12 +31,105 @@ h2 {
 .primary-link {
   font-size: 18px;
   padding: 10px 20px;
-  background-color: #e03662;
-  color: white;
+  color: black;
   box-shadow: var(--box-shadow);
   border-radius: 4px;
+  transition: all ease-in-out 400ms;
+}
+header .primary-link {
+  background-color: #e03662;
+}
+header .primary-link:hover {
+  background-color: white;
+  outline: 1px solid #e03662;
+  color: #e03662;
+}
+
+.first-project,
+.second-project,
+.third-project {
+  box-shadow: var(--box-shadow);
+}
+
+.project-description {
+  text-align: left;
+  padding: 80px 20px;
+}
+.project-description h2 {
+  font-size: 64px;
+}
+.project-description p {
+  opacity: 0.8;
+}
+
+.first-project .img-wrapper {
+  background-color: #fff0f3;
+}
+.first-project a {
+  background-color: #ff073a;
+}
+.first-project a:hover {
+  outline: 1px solid #ff073a;
+  color: #ff073a;
+  background-color: #fff0f3;
+}
+.first-project .color-tab {
+  border-right: 35px solid #ff073a;
   transition: all ease-in-out 600ms;
 }
-.primary-link:hover {
-  background-color: white;
+
+.second-project .img-wrapper {
+  background-color: #ffede2;
+}
+.second-project a {
+  background-color: #ff5e00;
+}
+.second-project a:hover {
+  background-color: #ffede2;
+  outline: 1px solid #ff5e00;
+  color: #ff5e00;
+}
+.second-project .color-tab {
+  border-left: 35px solid #ff5e00;
+  transition: all ease-in-out 600ms;
+}
+
+.third-project .img-wrapper {
+  background-color: #ffffe4;
+}
+.third-project a {
+  background-color: #ffff33;
+}
+.third-project a:hover {
+  background-color: #ffffe4;
+  outline: 1px solid #ffff33;
+  color: #ffff00;
+}
+.third-project .color-tab {
+  border-right: 35px solid #ffff33;
+  transition: all ease-in-out 600ms;
+}
+
+@media (min-width: 992px) {
+  .img-wrapper {
+    display: flex !important;
+    justify-content: space-around;
+  }
+  .img-wrapper img {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+  }
+  .first-project:hover > .color-tab {
+    border-right: 55px solid #ff073a;
+  }
+  .second-project:hover > .color-tab {
+    border-left: 55px solid #ff5e00;
+  }
+  .third-project:hover > .color-tab {
+    border-right: 55px solid #ffff33;
+  }
 }
