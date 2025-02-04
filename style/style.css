@@ -43,10 +43,10 @@ header .primary-link:hover {
   outline: 1px solid #e03662;
   color: #e03662;
   text-shadow:
-    1px 1px 0 #00000025,
-    -1px 1px 0 #00000025,
-    -1px -1px 0 #00000025,
-    1px -1px 0 #00000025;
+    1px 1px 0 #00000065,
+    -1px 1px 0 #00000065,
+    -1px -1px 0 #00000065,
+    1px -1px 0 #00000065;
 }
 
 .grid-title {
@@ -83,10 +83,10 @@ header .primary-link:hover {
   color: #F700F7;
   background-color: #fff3ff;
   text-shadow:
-    1px 1px 0 #00000025,
-    -1px 1px 0 #00000025,
-    -1px -1px 0 #00000025,
-    1px -1px 0 #00000025;
+    1px 1px 0 #00000065,
+    -1px 1px 0 #00000065,
+    -1px -1px 0 #00000065,
+    1px -1px 0 #00000065;
 }
 .first-project .color-tab {
   border-right: 35px solid #F700F7;
@@ -105,10 +105,10 @@ header .primary-link:hover {
     outline: 1px solid #ff5e00;
     color: #ff5e00;
     text-shadow:
-      1px 1px 0 #00000025,
-      -1px 1px 0 #00000025,
-      -1px -1px 0 #00000025,
-      1px -1px 0 #00000025;
+      1px 1px 0 #00000065,
+      -1px 1px 0 #00000065,
+      -1px -1px 0 #00000065,
+      1px -1px 0 #00000065;
 }
 .second-project .color-tab {
   border-left: 35px solid #ff5e00;
