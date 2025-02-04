@@ -36,11 +36,17 @@ header h2 {
 }
 header .primary-link {
   background-color: #e03662;
+  color: white;
 }
 header .primary-link:hover {
   background-color: white;
   outline: 1px solid #e03662;
   color: #e03662;
+  text-shadow:
+    1px 1px 0 #00000025,
+    -1px 1px 0 #00000025,
+    -1px -1px 0 #00000025,
+    1px -1px 0 #00000025;
 }
 
 .grid-title {
@@ -66,18 +72,24 @@ header .primary-link:hover {
 }
 
 .first-project .img-wrapper {
-  background-color: #fff0f3;
+  background-color: #fff3ff;
 }
 .first-project a {
-  background-color: #ff073a;
+  color: #fff;
+  background-color: #F700F7;
 }
 .first-project a:hover {
-  outline: 1px solid #ff073a;
-  color: #ff073a;
-  background-color: #fff0f3;
+  outline: 1px solid #F700F7;
+  color: #F700F7;
+  background-color: #fff3ff;
+  text-shadow:
+    1px 1px 0 #00000025,
+    -1px 1px 0 #00000025,
+    -1px -1px 0 #00000025,
+    1px -1px 0 #00000025;
 }
 .first-project .color-tab {
-  border-right: 35px solid #ff073a;
+  border-right: 35px solid #F700F7;
   transition: all ease-in-out 600ms;
 }
 
@@ -86,11 +98,17 @@ header .primary-link:hover {
 }
 .second-project a {
   background-color: #ff5e00;
-}
-.second-project a:hover {
-  background-color: #ffede2;
-  outline: 1px solid #ff5e00;
-  color: #ff5e00;
+   color: #fff;
+  }
+  .second-project a:hover {
+    background-color: #ffede2;
+    outline: 1px solid #ff5e00;
+    color: #ff5e00;
+    text-shadow:
+      1px 1px 0 #00000025,
+      -1px 1px 0 #00000025,
+      -1px -1px 0 #00000025,
+      1px -1px 0 #00000025;
 }
 .second-project .color-tab {
   border-left: 35px solid #ff5e00;
@@ -102,11 +120,17 @@ header .primary-link:hover {
 }
 .third-project a {
   background-color: #ffff33;
+   color: #000000;
 }
 .third-project a:hover {
   background-color: #ffffe4;
   outline: 1px solid #ffff33;
-  color: #d4d400;
+  color: #efef00;
+  text-shadow:
+    1px 1px 0 #00000025,
+    -1px 1px 0 #00000025,
+    -1px -1px 0 #00000025,
+    1px -1px 0 #00000025;
 }
 .third-project .color-tab {
   border-right: 35px solid #ffff33;
@@ -142,7 +166,7 @@ header .primary-link:hover {
     border-radius: 4px;
   }
   .first-project:hover > .color-tab {
-    border-right: 55px solid #ff073a;
+    border-right: 55px solid #F700F7;
   }
   .second-project:hover > .color-tab {
     border-left: 55px solid #ff5e00;
@@ -172,7 +196,7 @@ header .primary-link:hover {
     font-size: 48px;
   }
   .first-project:hover > .color-tab {
-    border-right: 45px solid #ff073a;
+    border-right: 45px solid #F700F7;
   }
   .second-project:hover > .color-tab {
     border-left: 45px solid #ff5e00;
