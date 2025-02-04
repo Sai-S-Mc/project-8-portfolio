@@ -13,11 +13,9 @@ body {
 }
 .about {
   background: linear-gradient(to top, #fdcbf18c 0%, #fdcbf181 1%, #e6dee9 100%);
-  background-size:100%;
-  padding: 160px 20px;
+  background-size: 100%;
 }
 header {
-  padding: 160px 20px 0;
   background-color: #f148e92e;
 }
 
@@ -138,18 +136,24 @@ header h2 {
   padding: 20px 10px;
 }
 
-.about img{
-  width: 500px;
-  height: 500px;
+.about img {
   display: block;
   margin: 0 auto;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
 }
 
+@media (min-width:1200px){
+  .about img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
 @media (min-width: 992px) {
+  .about,
   header {
-    padding-bottom: 160px;
+    padding: 160px 20px;
   }
   .above-heading {
     font-size: 36px;
@@ -166,7 +170,7 @@ header h2 {
   header h2 {
     font-size: 24px;
   }
-  main h2 {
+  .about h2 {
     font-size: 19px;
   }
   .project-description h2 {
@@ -193,20 +197,38 @@ header h2 {
   .third-project:hover > .color-tab {
     border-right: 55px solid #ffff33;
   }
+
+  .about img {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 @media (max-width: 991.5px) {
+  .about,
   header {
-    padding-bottom: 80px;
+    padding: 80px 20px;
+  }
+  .about {
+    text-align: center;
   }
   .above-heading {
     font-size: 28px;
   }
+  .about .above-heading {
+    font-size: 22px;
+  }
   h1 {
     font-size: 65px;
   }
+  .about h1 {
+    font-size: 50px;
+  }
   header h2 {
     font-size: 24px;
+  }
+  .about h2 {
+    font-size: 18px;
   }
   .project-description {
     text-align: center;
@@ -222,5 +244,11 @@ header h2 {
   }
   .third-project:hover > .color-tab {
     border-right: 45px solid #ffff33;
+  }
+
+  .about img {
+    margin-top: 30px;
+    width: 450px;
+    height: 450px;
   }
 }
