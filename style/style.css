@@ -17,7 +17,7 @@ body {
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
 }
-.top-section h2 {
+ h2 {
   font-weight: 500;
 }
 .links {
@@ -147,6 +147,9 @@ img {
   width: 300px;
   height: 300px;
 }
+.work h2{
+  line-height: 1.6;
+}
 
 @media (min-width: 1200px) {
   .about img {
@@ -165,15 +168,12 @@ img {
   h1 {
     font-size: 65px;
   }
-  .top-section h2 {
-    font-size: 19px;
+  h2 {
+    font-size: 24px;
   }
 
   .homepage h1 {
     font-size: 96px;
-  }
-  .homepage h2 {
-    font-size: 24px;
   }
   .homepage .img-wrapper {
     display: flex !important;
@@ -216,7 +216,7 @@ img {
   h1 {
     font-size: 50px;
   }
-  .top-section h2 {
+  .content h2 {
     font-size: 18px;
   }
 
@@ -250,6 +250,10 @@ img {
     width: 450px;
     height: 450px;
   }
+
+  .work p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -270,7 +274,17 @@ img {
 }
 
 @media (max-width: 360px) {
+  h1 , .homepage h1 {
+    font-size: 44px;
+  }
+
   .about img {
     display: none;
+  }
+
+  .work img{
+    width:200px;
+    height:200px;
+    margin:10px
   }
 }
