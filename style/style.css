@@ -57,6 +57,12 @@ body {
 .third-project {
   box-shadow: var(--box-shadow);
 }
+img {
+  display: block;
+  margin: auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+}
 .project-description {
   text-align: left;
   padding: 80px 20px;
@@ -132,6 +138,16 @@ body {
   box-shadow: var(--box-shadow);
 }
 
+.work .img-wrapper {
+  display: flex !important;
+  justify-content: space-around;
+}
+.work img {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
 @media (min-width: 1200px) {
   .about img {
     width: 500px;
@@ -159,20 +175,16 @@ body {
   .homepage h2 {
     font-size: 24px;
   }
-  .project-description h2 {
-    font-size: 64px;
-  }
   .homepage .img-wrapper {
     display: flex !important;
     justify-content: space-around;
   }
   .homepage img {
-    display: block;
-    margin: auto;
     width: 400px;
     height: 400px;
-    box-shadow: var(--box-shadow);
-    border-radius: 4px;
+  }
+  .project-description h2 {
+    font-size: 64px;
   }
   .first-project:hover > .color-tab {
     border-right: 55px solid #f700f7;
