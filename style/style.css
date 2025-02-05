@@ -54,7 +54,8 @@ body {
 }
 .first-project,
 .second-project,
-.third-project {
+.third-project, 
+.fourth-project {
   box-shadow: var(--box-shadow);
 }
 img {
@@ -71,7 +72,7 @@ img {
   font-size: 18px;
   opacity: 0.8;
 }
-.first-project .img-wrapper {
+.first-project .img-wrapper, .fourth-project .img-wrapper {
   background-color: #fff3ff;
 }
 .first-project a {
