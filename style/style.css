@@ -61,8 +61,7 @@ h2 {
 }
 .first-project,
 .second-project,
-.third-project,
-.fourth-project {
+.third-project {
   box-shadow: var(--box-shadow);
 }
 img {
@@ -79,8 +78,7 @@ img {
   font-size: 18px;
   opacity: 0.8;
 }
-.first-project .img-wrapper,
-.fourth-project .img-wrapper {
+.first-img-wrapper {
   background-color: var(--first-bg-color);
 }
 .first-project a {
@@ -97,7 +95,7 @@ img {
   border-right: 35px solid var(--first-neon-color);
   transition: all ease-in-out 600ms;
 }
-.second-project .img-wrapper {
+.second-img-wrapper {
   background-color: var(--second-bg-color);
 }
 .second-project a {
@@ -114,7 +112,7 @@ img {
   border-left: 35px solid var(--second-neon-color);
   transition: all ease-in-out 600ms;
 }
-.third-project .img-wrapper {
+.third-img-wrapper {
   background-color: var(--third-bg-color);
 }
 .third-project a {
@@ -147,10 +145,6 @@ img {
   box-shadow: var(--box-shadow);
 }
 
-.work .img-wrapper {
-  display: flex !important;
-  justify-content: space-around;
-}
 .work img {
   margin: 20px 3px;
   width: 330px;
@@ -159,6 +153,16 @@ img {
 .work h2 {
   line-height: 1.8;
   font-weight: var(--heading-font-weight);
+}
+
+.contact main {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.social-icons {
+  font-size: 40px;
+  padding: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -298,17 +302,4 @@ img {
     height: 200px;
     margin: 10px;
   }
-}
-
-.contact .icon-wrapper {
-  display: block;
-  margin: auto;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-}
-
-.contact .icon {
-  font-size: 40px;
-  padding: 30px;
 }
