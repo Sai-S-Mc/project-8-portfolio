@@ -5,6 +5,13 @@
   --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   --text-shadow: 1px 1px 0 #00000065, -1px 1px 0 #00000065,
     -1px -1px 0 #00000065, 1px -1px 0 #00000065;
+  --primary-link-color: #e03662;
+  --first-bg-color: #fff3ff;
+  --second-bg-color: #ffede2;
+  --third-bg-color: #ffffe4;
+  --first-neon-color: #f700f7;
+  --second-neon-color: #ff5e00;
+  --third-neon-color: #ffff33;
 }
 body {
   font-family: var(--default-font);
@@ -17,7 +24,7 @@ body {
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
 }
- h2 {
+h2 {
   font-weight: 500;
 }
 .links {
@@ -28,13 +35,13 @@ body {
   transition: all ease-in-out 400ms;
 }
 .primary-link {
-  background-color: #e03662;
+  background-color: var(--primary-link-color);
   color: white;
 }
 .primary-link:hover {
   background-color: white;
-  outline: 1px solid #e03662;
-  color: #e03662;
+  outline: 1px solid var(--primary-link-color);
+  color: var(--primary-link-color);
 }
 
 .homepage .top-section {
@@ -54,7 +61,7 @@ body {
 }
 .first-project,
 .second-project,
-.third-project, 
+.third-project,
 .fourth-project {
   box-shadow: var(--box-shadow);
 }
@@ -72,56 +79,57 @@ img {
   font-size: 18px;
   opacity: 0.8;
 }
-.first-project .img-wrapper, .fourth-project .img-wrapper {
-  background-color: #fff3ff;
+.first-project .img-wrapper,
+.fourth-project .img-wrapper {
+  background-color: var(--first-bg-color);
 }
 .first-project a {
   color: #fff;
-  background-color: #f700f7;
+  background-color: var(--first-neon-color);
 }
 .first-project a:hover {
-  outline: 1px solid #f700f7;
-  color: #f700f7;
-  background-color: #fff3ff;
+  outline: 1px solid var(--first-neon-color);
+  color: var(--first-neon-color);
+  background-color: var(--first-bg-color);
   text-shadow: var(--text-shadow);
 }
 .first-project .color-tab {
-  border-right: 35px solid #f700f7;
+  border-right: 35px solid var(--first-neon-color);
   transition: all ease-in-out 600ms;
 }
 .second-project .img-wrapper {
-  background-color: #ffede2;
+  background-color: var(--second-bg-color);
 }
 .second-project a {
-  background-color: #ff5e00;
+  background-color: var(--second-neon-color);
   color: #fff;
 }
 .second-project a:hover {
-  background-color: #ffede2;
-  outline: 1px solid #ff5e00;
-  color: #ff5e00;
+  background-color: var(--second-bg-color);
+  outline: 1px solid var(--second-neon-color);
+  color: var(--second-neon-color);
   text-shadow: var(--text-shadow);
 }
 .second-project .color-tab {
-  border-left: 35px solid #ff5e00;
+  border-left: 35px solid var(--second-neon-color);
   transition: all ease-in-out 600ms;
 }
 .third-project .img-wrapper {
-  background-color: #ffffe4;
+  background-color: var(--third-bg-color);
 }
 .third-project a {
-  background-color: #ffff33;
+  background-color: var(--third-neon-color);
   color: #000000;
 }
 .third-project a:hover {
-  background-color: #ffffe4;
-  outline: 1px solid #ffff33;
+  background-color: var(--third-bg-color);
+  outline: 1px solid var(--third-neon-color);
   color: #efef00;
   text-shadow: 1px 1px 0 #00000025, -1px 1px 0 #00000025, -1px -1px 0 #00000025,
     1px -1px 0 #00000025;
 }
 .third-project .color-tab {
-  border-right: 35px solid #ffff33;
+  border-right: 35px solid var(--third-neon-color);
   transition: all ease-in-out 600ms;
 }
 
@@ -148,7 +156,7 @@ img {
   width: 330px;
   height: 330px;
 }
-.work h2{
+.work h2 {
   line-height: 1.8;
   font-weight: var(--heading-font-weight);
 }
@@ -189,13 +197,13 @@ img {
     font-size: 64px;
   }
   .first-project:hover > .color-tab {
-    border-right: 55px solid #f700f7;
+    border-right: 55px solid var(--first-neon-color);
   }
   .second-project:hover > .color-tab {
-    border-left: 55px solid #ff5e00;
+    border-left: 55px solid var(--second-neon-color);
   }
   .third-project:hover > .color-tab {
-    border-right: 55px solid #ffff33;
+    border-right: 55px solid var(--third-neon-color);
   }
 
   .about .above-heading {
@@ -238,13 +246,13 @@ img {
     font-size: 48px;
   }
   .first-project:hover > .color-tab {
-    border-right: 45px solid #f700f7;
+    border-right: 45px solid var(--first-neon-color);
   }
   .second-project:hover > .color-tab {
-    border-left: 45px solid #ff5e00;
+    border-left: 45px solid var(--second-neon-color);
   }
   .third-project:hover > .color-tab {
-    border-right: 45px solid #ffff33;
+    border-right: 45px solid var(--third-neon-color);
   }
 
   .about img {
@@ -276,7 +284,8 @@ img {
 }
 
 @media (max-width: 360px) {
-  h1 , .homepage h1 {
+  h1,
+  .homepage h1 {
     font-size: 44px;
   }
 
@@ -284,9 +293,22 @@ img {
     display: none;
   }
 
-  .work img{
-    width:200px;
-    height:200px;
-    margin:10px
+  .work img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
   }
+}
+
+.contact .icon-wrapper {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.contact .icon {
+  font-size: 40px;
+  padding: 30px;
 }
