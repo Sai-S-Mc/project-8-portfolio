@@ -3,8 +3,8 @@
   --heading-font: "Playfair Display", serif;
   --heading-font-weight: 700;
   --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-  --text-shadow: 1px 1px 0 #00000065, -1px 1px 0 #00000065,
-    -1px -1px 0 #00000065, 1px -1px 0 #00000065;
+  --text-shadow: 1px 1px 0 #00000025, 1px 1px 0 #00000025, 1px 1px 0 #00000025,
+    1px 1px 0 #00000025;
   --primary-link-color: #e03662;
   --first-bg-color: #fff3ff;
   --second-bg-color: #ffede2;
@@ -44,7 +44,8 @@ h2 {
   color: var(--primary-link-color);
 }
 
-.homepage .top-section {
+.homepage .top-section,
+.contact .top-section {
   background-color: #f148e92e;
 }
 .homepage .top-section h2 {
@@ -78,18 +79,20 @@ img {
   font-size: 18px;
   opacity: 0.8;
 }
+.project-description a {
+  color: white;
+  text-shadow: var(--text-shadow);
+}
 .first-img-wrapper {
   background-color: var(--first-bg-color);
 }
 .first-project a {
-  color: #fff;
   background-color: var(--first-neon-color);
 }
 .first-project a:hover {
   outline: 1px solid var(--first-neon-color);
   color: var(--first-neon-color);
   background-color: var(--first-bg-color);
-  text-shadow: var(--text-shadow);
 }
 .first-project .color-tab {
   border-right: 35px solid var(--first-neon-color);
@@ -100,13 +103,11 @@ img {
 }
 .second-project a {
   background-color: var(--second-neon-color);
-  color: #fff;
 }
 .second-project a:hover {
   background-color: var(--second-bg-color);
   outline: 1px solid var(--second-neon-color);
   color: var(--second-neon-color);
-  text-shadow: var(--text-shadow);
 }
 .second-project .color-tab {
   border-left: 35px solid var(--second-neon-color);
@@ -117,14 +118,11 @@ img {
 }
 .third-project a {
   background-color: var(--third-neon-color);
-  color: #000000;
 }
 .third-project a:hover {
   background-color: var(--third-bg-color);
   outline: 1px solid var(--third-neon-color);
   color: #efef00;
-  text-shadow: 1px 1px 0 #00000025, -1px 1px 0 #00000025, -1px -1px 0 #00000025,
-    1px -1px 0 #00000025;
 }
 .third-project .color-tab {
   border-right: 35px solid var(--third-neon-color);
@@ -160,9 +158,47 @@ img {
   text-align: center;
   margin: 0 auto;
 }
+.contact a {
+  text-decoration: none;
+  color: #000000;
+}
+.icon-wrapper {
+  transform: rotateZ(-45deg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  transition: all ease-in-out 300ms;
+}
 .social-icons {
+  display: block;
+  transform: rotateZ(45deg);
+  line-height: 100px;
   font-size: 40px;
-  padding: 30px;
+  color: #000000;
+  transition: all ease-in-out 1000ms;
+}
+.icon-wrapper:hover {
+  transform: rotateZ(360deg);
+  margin-top: 20px;
+}
+.icon-wrapper:hover > .social-icons {
+  transform: none;
+}
+
+.text-link{
+transition: all ease-in-out500ms;
+}
+.text-link:hover{
+  text-shadow: var(--text-shadow);
+}
+.first-link:hover {
+  color: var(--first-neon-color);
+}
+.second-link:hover {
+  color: var(--second-neon-color);
+}
+.third-link:hover {
+  color: var(--third-neon-color);
 }
 
 @media (min-width: 1200px) {
