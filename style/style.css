@@ -189,10 +189,6 @@ img {
   .homepage h1 {
     font-size: 96px;
   }
-  .homepage .img-wrapper {
-    display: flex !important;
-    justify-content: space-around;
-  }
   .homepage img {
     width: 400px;
     height: 400px;
