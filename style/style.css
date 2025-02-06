@@ -144,12 +144,13 @@ img {
   justify-content: space-around;
 }
 .work img {
-  margin: 20px;
-  width: 300px;
-  height: 300px;
+  margin: 20px 3px;
+  width: 330px;
+  height: 330px;
 }
 .work h2{
-  line-height: 1.6;
+  line-height: 1.8;
+  font-weight: var(--heading-font-weight);
 }
 
 @media (min-width: 1200px) {
