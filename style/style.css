@@ -417,7 +417,6 @@ img {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
   .nav-menu {
     position: fixed;
     flex-direction: column;
@@ -427,5 +426,9 @@ img {
     margin: -1px 0 0;
     left:-100%;
     background-color: #fec9e9e8;
+    transition: all ease-in-out 1000ms;
+  }
+  .nav-menu.active {
+    left:0;
   }
 }
