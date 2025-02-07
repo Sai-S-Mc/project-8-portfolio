@@ -389,6 +389,7 @@ img {
   }
   .hamburger.active .bar:nth-child(2) {
     visibility: hidden;
+    transition-delay: 0ms;
   }
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -398,6 +399,22 @@ img {
     transform: translateY(-8px) rotate(-45deg);
     transition: all ease-in-out 500ms;
   }
+
+  .hamburger .bar:nth-child(2) {
+    visibility: visible;
+    transition-delay: 350ms;
+  }
+  .hamburger .bar:nth-child(1) {
+    transform: translateY(0) rotate(180deg);
+    transition: all ease-in-out 500ms;
+  }
+  .hamburger .bar:nth-child(3) {
+    transform: translateY(0) rotate(-180deg);
+    transition: all ease-in-out 500ms;
+  }
+
+
+
   .nav-menu {
     position: fixed;
     flex-direction: column;
