@@ -56,7 +56,7 @@ nav a {
   padding: 10px 30px;
   color: var(--primary-link-color);
 }
-.nav-item.last{
+.nav-item.last {
   padding-right: 10px;
 }
 .nav-link {
@@ -334,7 +334,7 @@ img {
   .content h2 {
     font-size: 18px;
   }
-  
+
   .homepage .above-heading {
     font-size: 28px;
   }
@@ -359,44 +359,44 @@ img {
   .third-project:hover > .color-tab {
     border-right: 45px solid var(--third-neon-color);
   }
-  
+
   .about img {
     margin-top: 30px;
     width: 450px;
     height: 450px;
   }
-  
+
   .work p {
     font-size: 14px;
   }
 }
 
 @media (max-width: 800px) {
-  .logo-border{
-    transform: scale(0.8);
+  .logo-border {
+    transform: scale(0.8) ;
   }
-  .logo-border:hover{
-    transform: scale(0.9);
+  .logo-border:hover {
+    transform: scale(0.9) rotateZ(180deg);
   }
   .nav-item {
     font-size: 14px;
   }
 }
 
-
 @media (max-width: 600px) {
   .hamburger {
     display: block;
-    transition: all ease-in-out 300ms;
   }
   .hamburger.active .bar:nth-child(2) {
     visibility: hidden;
   }
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
+    transition: all ease-in-out 500ms;
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+    transition: all ease-in-out 500ms;
   }
   .nav-menu {
     position: fixed;
@@ -412,7 +412,7 @@ img {
   .nav-menu.active {
     left: 0;
   }
-  .nav-item.last{
+  .nav-item.last {
     padding-right: 30px;
   }
 }
