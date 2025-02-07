@@ -48,23 +48,23 @@ nav a {
 .logo-border:hover > .logo {
   transform: rotateZ(-360deg);
 }
-nav ul {
+.nav-menu {
   margin-top: 14px;
 }
-nav li {
+.nav-item{
   list-style: none;
   padding: 10px 30px;
   color: var(--primary-link-color);
 }
-nav li a {
+.nav-link {
   color: #000000;
   transition: all ease-in-out 150ms;
 }
-nav li a:hover {
+.nav-link:hover{
   color: var(--primary-link-color);
   text-decoration: dotted overline;
 }
-.current {
+.nav-link.current {
   color: var(--primary-link-color);
 }
 
