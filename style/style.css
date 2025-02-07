@@ -9,13 +9,65 @@
   --first-bg-color: #fff3ff;
   --second-bg-color: #ffede2;
   --third-bg-color: #ffffe4;
-  --first-neon-color: #f700f7;
+  --first-neon-color: #f94090;
   --second-neon-color: #ff5e00;
   --third-neon-color: #ffff33;
 }
 body {
   font-family: var(--default-font);
 }
+
+.navigation-bar{
+  background-color: #fec9e9e8;
+}
+nav a {
+  text-decoration: none;
+}
+.logo-border {
+  border: 2px solid transparent;
+  border-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  border-image-slice: 1;
+  padding: 12px;
+  margin: 13px 0;
+  background-color: #fbe2fa;
+  transition: all ease-in-out 500ms;
+}
+.logo-border:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotateZ(180deg);
+}
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  background: linear-gradient(#ff5858 50%, #ff7300 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all ease-in-out 500ms;
+}
+.logo-border:hover > .logo {
+  transform: rotateZ(-360deg);
+}
+nav ul {
+  margin-top: 14px;
+}
+nav li {
+  list-style: none;
+  padding: 10px 30px;
+  color: var(--primary-link-color);
+}
+nav li a {
+  color: #000000;
+  transition: all ease-in-out 150ms;
+}
+nav li a:hover {
+  color: var(--primary-link-color);
+  text-decoration: dotted overline;
+}
+.current {
+  color: var(--primary-link-color);
+}
+
 .above-heading {
   font-weight: var(--heading-font-weight);
   opacity: 0.95;
@@ -253,7 +305,7 @@ img {
 @media (max-width: 991.5px) {
   .top-section {
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px 80px;
   }
   .above-heading {
     font-size: 22px;
@@ -333,39 +385,4 @@ img {
     height: 200px;
     margin: 10px;
   }
-}
-
-.navigation-bar {
-  background-color: white;
-}
-.logo-border {
-  border: 2px solid transparent;
-  border-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-  border-image-slice: 1;
-  padding: 0 12px;
-  margin:13px 0;
-  transition: all ease-in-out 500ms;
-}
-.logo-border:hover {
-  cursor: pointer;
-  transform: scale(1.1) rotateZ(180deg);
-}
-.logo{
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 2.2;
-  background: linear-gradient(#ff5858 50%, #ff7300 50%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all ease-in-out 500ms;
-}
-.logo-border:hover > .logo{
- transform: rotateZ(-360deg);
-}
-nav ul {
-  margin-top: 14px;
-}
-nav li {
-  list-style: none;
-  padding: 10px 30px;
 }
