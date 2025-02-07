@@ -237,7 +237,7 @@ img {
   transform: none;
 }
 .text-link {
-  transition: all ease-in-out500ms;
+  transition: all ease-in-out 500ms;
 }
 .text-link:hover {
   text-shadow: var(--text-shadow);
@@ -316,7 +316,7 @@ img {
   .content h2 {
     font-size: 18px;
   }
-
+  
   .homepage .above-heading {
     font-size: 28px;
   }
@@ -341,15 +341,58 @@ img {
   .third-project:hover > .color-tab {
     border-right: 45px solid var(--third-neon-color);
   }
-
+  
   .about img {
     margin-top: 30px;
     width: 450px;
     height: 450px;
   }
-
+  
   .work p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo-border{
+    transform: scale(0.8);
+  }
+  .logo-border:hover{
+    transform: scale(0.9);
+  }
+  .nav-item {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hamburger {
+    display: block;
+    transition: all ease-in-out 300ms;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    visibility: hidden;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    top: 74px;
+    margin: -1px 0 0;
+    left: -100%;
+    background-color: #fec9e9e8;
+    transition: all ease-in-out 1000ms;
+  }
+  .nav-menu.active {
+    left: 0;
   }
 }
 
@@ -403,32 +446,3 @@ img {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.079);
 }
 
-@media (max-width: 576px) {
-  .hamburger {
-    display: block;
-    transition: all ease-in-out 300ms;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    visibility: hidden;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu {
-    position: fixed;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    top:74px;
-    margin: -1px 0 0;
-    left:-100%;
-    background-color: #fec9e9e8;
-    transition: all ease-in-out 1000ms;
-  }
-  .nav-menu.active {
-    left:0;
-  }
-}
