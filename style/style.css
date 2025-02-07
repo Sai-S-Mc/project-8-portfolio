@@ -421,7 +421,7 @@ img {
     text-align: center;
     width: 100%;
     top: 74px;
-    margin: -1px 0 0;
+    margin: -0.5px 0 0;
     left: -100%;
     background-color: #fec9e9e8;
     transition: all ease-in-out 1000ms;
