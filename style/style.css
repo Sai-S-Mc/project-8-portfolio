@@ -462,3 +462,33 @@ img {
     margin: 10px;
   }
 }
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer .icon-wrapper {
+  /* transform: rotateZ(-45deg); */
+  width: 40px;
+  height: 40px;
+  margin:30px;
+  transition: all ease-in-out 300ms;
+}
+footer .social-icons {
+  display: block;
+  transform: rotateZ(45deg);
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  transition: all ease-in-out 1000ms;
+}
+footer .icon-wrapper:hover {
+  transform: rotateZ(360deg);
+  margin-top: 20px;
+}
+footer .icon-wrapper:hover > .social-icons {
+  transform: none;
+}
