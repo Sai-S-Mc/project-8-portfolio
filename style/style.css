@@ -378,12 +378,7 @@ img {
   .logo-border:hover {
     transform: scale(0.9) rotateZ(180deg);
   }
-  .nav-item {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 600px) {
+  
   .hamburger {
     display: block;
   }
@@ -399,7 +394,6 @@ img {
     transform: translateY(-8px) rotate(-45deg);
     transition: all ease-in-out 800ms;
   }
-
   .hamburger .bar:nth-child(2) {
     visibility: visible;
     transition-delay: 550ms;
@@ -426,6 +420,9 @@ img {
   }
   .nav-menu.active {
     left: 0;
+  }
+  .nav-item {
+    font-size: 14px;
   }
   .nav-item.last {
     padding-right: 30px;
