@@ -142,6 +142,15 @@ footer .icon-wrapper:hover {
 footer .icon-wrapper:hover > .social-icons {
   transform: rotateZ(-90deg);
 }
+footer .first-img-wrapper .social-icons:hover{
+  color: var(--first-neon-color);
+}
+footer .second-img-wrapper .social-icons:hover{
+  color: var(--second-neon-color);
+}
+footer .third-img-wrapper .social-icons:hover{
+  color: var(--third-neon-color);
+}
 footer .contact-me-box {
   display: flex;
   justify-content: space-between;
