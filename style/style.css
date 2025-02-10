@@ -142,13 +142,13 @@ footer .icon-wrapper:hover {
 footer .icon-wrapper:hover > .social-icons {
   transform: rotateZ(-90deg);
 }
-footer .first-img-wrapper .social-icons:hover{
+footer .first-img-wrapper .social-icons:hover {
   color: var(--first-neon-color);
 }
-footer .second-img-wrapper .social-icons:hover{
+footer .second-img-wrapper .social-icons:hover {
   color: var(--second-neon-color);
 }
-footer .third-img-wrapper .social-icons:hover{
+footer .third-img-wrapper .social-icons:hover {
   color: var(--third-neon-color);
 }
 footer .contact-me-box {
@@ -156,10 +156,30 @@ footer .contact-me-box {
   justify-content: space-between;
   background-color: #f148e92e;
   padding: 30px 80px;
-  margin-top: 80px;
 }
 .footer .primary-link {
   margin-top: 12px;
+}
+footer p {
+  font-size: 14px;
+}
+footer p a {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all ease-in-out 250ms;
+}
+footer p a:hover {
+  color: var(--primary-link-color);
+}
+.fa-briefcase,
+.fa-heart {
+  font-size: 16px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 }
 
 .homepage .top-section,
@@ -245,6 +265,15 @@ img {
 .third-project .color-tab {
   border-right: 35px solid var(--third-neon-color);
   transition: all ease-in-out 600ms;
+}
+.grid-footer a {
+  text-decoration: none;
+  color: var(--primary-link-color);
+  font-weight:600;
+  transition: all ease-in-out 200ms;
+}
+.grid-footer a:hover{
+  text-shadow: var(--text-shadow);
 }
 
 .about {
@@ -338,6 +367,9 @@ img {
   footer .primary-link {
     padding: 20px 40px;
     margin-top: 12px;
+  }
+  footer span {
+    padding-left: 8px;
   }
 
   .homepage h1 {
@@ -484,16 +516,15 @@ img {
     flex-direction: column;
     text-align: center;
   }
-  footer h2{
+  footer h2 {
     margin-bottom: 15px;
   }
-  footer span{
+  footer span {
     display: none;
   }
   footer .primary-link {
     font-size: 15px;
   }
-  
 }
 
 @media (max-width: 510px) {
@@ -533,3 +564,5 @@ img {
     margin: 10px;
   }
 }
+
+
