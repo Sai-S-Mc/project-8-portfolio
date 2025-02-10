@@ -299,6 +299,27 @@ img {
   line-height: 1.8;
   font-weight: var(--heading-font-weight);
 }
+.work .content h2 a {
+  text-decoration: none;
+  color: #434343;
+  transition: all ease-in-out 200ms;
+}
+.work .content h2 a:hover {
+  text-shadow: var(--text-shadow);
+}
+.work .first-project + h2 a:hover {
+  color: var(--first-neon-color);
+}
+.work .second-project + h2 a:hover {
+  color: var(--second-neon-color);
+}
+.work .third-project + h2 a:hover {
+  color: var(--third-neon-color);
+}
+.work footer h2{
+  line-height: 1;
+  font-weight: 500;
+}
 
 .contact main {
   display: block;
