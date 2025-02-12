@@ -30,7 +30,7 @@ nav a {
   padding: 12px;
   margin: 13px 0;
   background-color: #fbe2fa;
-  transition: all ease-in-out 500ms;
+  transition: all ease-in-out 800ms;
 }
 .logo-border:hover {
   cursor: pointer;
@@ -43,7 +43,7 @@ nav a {
   background: linear-gradient(#ff5858 50%, #ff7300 50%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all ease-in-out 500ms;
+  transition: all ease-in-out 900ms;
 }
 .logo-border:hover > .logo {
   transform: rotateZ(-360deg);
@@ -316,7 +316,7 @@ img {
 .work .third-project + h2 a:hover {
   color: var(--third-neon-color);
 }
-.work footer h2{
+.work footer h2 {
   line-height: 1;
   font-weight: 500;
 }
@@ -332,10 +332,11 @@ img {
 }
 .contact .icon-wrapper {
   transform: rotateZ(-45deg);
+  transition: all ease-in-out 900ms;
 }
 .contact .social-icons {
   transform: rotateZ(45deg);
-  transition: all ease-in-out 1000ms;
+  transition: all ease-in-out 1500ms;
 }
 .contact .icon-wrapper:hover {
   transform: rotateZ(360deg);
