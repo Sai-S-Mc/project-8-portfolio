@@ -275,6 +275,12 @@ img {
 .grid-footer a:hover {
   text-shadow: var(--text-shadow);
 }
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 
 .about {
   background: linear-gradient(to top, #fdcbf18c 0%, #fdcbf181 1%, #e6dee9 100%);
