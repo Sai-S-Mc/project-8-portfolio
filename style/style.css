@@ -215,7 +215,7 @@ img {
 }
 .project-description p {
   font-size: 18px;
-  opacity: 0.8;
+  color: #4d5154;
 }
 .project-description a {
   color: white;
@@ -235,6 +235,7 @@ img {
 .first-project .color-tab {
   border-right: 35px solid var(--first-neon-color);
   transition: all ease-in-out 600ms;
+  box-shadow: 35px 0px 0px 0px var(--first-neon-color);
 }
 .second-img-wrapper {
   background-color: var(--second-bg-color);
