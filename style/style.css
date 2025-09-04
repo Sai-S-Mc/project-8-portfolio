@@ -235,7 +235,6 @@ img {
 .first-project .color-tab {
   border-right: 35px solid var(--first-neon-color);
   transition: all ease-in-out 600ms;
-  box-shadow: 35px 0px 0px 0px var(--first-neon-color);
 }
 .second-img-wrapper {
   background-color: var(--second-bg-color);
@@ -401,20 +400,19 @@ img {
   }
 
   .homepage h1 {
-    font-size: 96px;
+    font-size: 80px;
   }
   .homepage img {
     width: 400px;
     height: 400px;
   }
   .project-description h2 {
-    font-size: 64px;
-  }
   .first-project:hover > .color-tab {
     border-right: 55px solid var(--first-neon-color);
   }
   .second-project:hover > .color-tab {
     border-left: 55px solid var(--second-neon-color);
+    font-size: 50px;
   }
   .third-project:hover > .color-tab {
     border-right: 55px solid var(--third-neon-color);
