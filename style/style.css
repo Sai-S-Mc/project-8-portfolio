@@ -198,9 +198,8 @@ footer p a:hover {
   opacity: 0.7;
   font-style: italic;
 }
-.first-project,
-.second-project,
-.third-project {
+
+.projects{
   box-shadow: var(--box-shadow);
 }
 img {
@@ -407,15 +406,10 @@ img {
     height: 400px;
   }
   .project-description h2 {
-  .first-project:hover > .color-tab {
-    border-right: 55px solid var(--first-neon-color);
-  }
-  .second-project:hover > .color-tab {
-    border-left: 55px solid var(--second-neon-color);
     font-size: 50px;
   }
-  .third-project:hover > .color-tab {
-    border-right: 55px solid var(--third-neon-color);
+  .projects:hover > .color-tab {
+    border-width: 55px;
   }
 
   .about .above-heading {
