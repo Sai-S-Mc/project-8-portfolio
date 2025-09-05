@@ -1,8 +1,10 @@
 function toggleClassBasedOnViewportWidth() {
-  if (window.innerWidth < breakpoint) {
-    projectContainerElement.classList.remove("container");
-  } else {
-    projectContainerElement.classList.add("container");
+  if (projectContainerElement) {
+    if (window.innerWidth < breakpoint) {
+      projectContainerElement.classList.remove("container");
+    } else {
+      projectContainerElement.classList.add("container");
+    }
   }
 }
 
@@ -19,5 +21,4 @@ toggleClassBasedOnViewportWidth();
 let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
 
-
-window.addEventListener("resize", toggleClassBasedOnViewportWidth)
+window.addEventListener("resize", toggleClassBasedOnViewportWidth);
