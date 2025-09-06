@@ -7,6 +7,14 @@ function toggleClassBasedOnViewportWidth() {
     }
   }
 
+  if (footerTextElement) {
+    if (window.innerWidth < 801) {
+      footerTextElement.classList.add("mb-3");
+    } else {
+      footerTextElement.classList.remove("mb-3");
+    }
+  }
+
   if (footerSpanElement) {
     if (window.innerWidth < 991) {
       footerSpanElement.classList.replace("ps-2", "ps-1");
@@ -22,8 +30,7 @@ function activateHamburger() {
 }
 
 let projectContainerElement = document.querySelector("#projects-display");
-let breakpoint = 768.5;
-
+let footerTextElement = document.querySelector(".contact-me-box div");
 let footerSpanElement = document.querySelector(
   ".contact-me-box span.text-muted"
 );
