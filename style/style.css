@@ -98,9 +98,6 @@ nav a {
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
 }
-h2 {
-  font-weight: 500;
-}
 .links {
   font-size: 18px;
   padding: 10px 20px;
@@ -112,9 +109,14 @@ h2 {
   background-color: var(--primary-link-color);
   color: white;
 }
+.primary-link:hover,
+.projects a:hover {
+  outline-width: 1px;
+  outline-style: solid;
+}
 .primary-link:hover {
   background-color: white;
-  outline: 1px solid var(--primary-link-color);
+  outline-color: var(--primary-link-color);
   color: var(--primary-link-color);
 }
 .icon-wrapper {
@@ -158,6 +160,7 @@ footer .third-img-wrapper .social-icons:hover {
 footer .contact-me-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--primary-bg-color);
   padding: 30px 80px;
 }
@@ -233,7 +236,7 @@ img {
   background-color: var(--first-neon-color);
 }
 .first-project a:hover {
-  outline: 1px solid var(--first-neon-color);
+  outline-color: var(--first-neon-color);
   color: var(--first-neon-color);
   background-color: var(--first-bg-color);
 }
@@ -249,7 +252,7 @@ img {
 }
 .second-project a:hover {
   background-color: var(--second-bg-color);
-  outline: 1px solid var(--second-neon-color);
+  outline-color: var(--second-neon-color);
   color: var(--second-neon-color);
 }
 .second-project .color-tab {
@@ -264,7 +267,7 @@ img {
 }
 .third-project a:hover {
   background-color: var(--third-bg-color);
-  outline: 1px solid var(--third-neon-color);
+  outline-color: var(--third-neon-color);
   color: #efef00;
 }
 .third-project .color-tab {
@@ -305,12 +308,7 @@ img {
   width: 330px;
   height: 330px;
 }
-.work h2 {
-  line-height: 1.8;
-  font-weight: var(--heading-font-weight);
-}
 .work .content h2 a {
-  text-decoration: none;
   color: #434343;
   transition: all ease-in-out 200ms;
 }
@@ -325,10 +323,6 @@ img {
 }
 .work .third-project + h2 a:hover {
   color: var(--third-neon-color);
-}
-.work footer h2 {
-  line-height: 1;
-  font-weight: 500;
 }
 
 .contact main {
@@ -398,10 +392,6 @@ img {
   }
   footer .primary-link {
     padding: 20px 40px;
-    margin-top: 12px;
-  }
-  footer span {
-    padding-left: 8px;
   }
 
   .homepage h1 {
@@ -542,12 +532,6 @@ img {
   footer .contact-me-box {
     flex-direction: column;
     text-align: center;
-  }
-  footer h2 {
-    margin-bottom: 15px;
-  }
-  footer span {
-    display: none;
   }
   footer .primary-link {
     font-size: 15px;
