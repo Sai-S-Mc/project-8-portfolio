@@ -16,12 +16,13 @@
   --third-neon-color: #ffff33;
   --common-transition: all ease-in-out 600ms;
 }
+
 body {
   font-family: var(--default-font);
 }
 
 .navigation-bar {
-  background-color: rgba(254, 201, 233, 0.974);
+  background-color: var(--secondary-bg-color);
 }
 .nav-content-wrapper {
   margin: 13px 0;
@@ -120,7 +121,7 @@ h2 {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  transition: all ease-in-out 600ms;
+  transition: var(--common-transition);
 }
 .social-icons {
   display: block;
@@ -137,7 +138,7 @@ footer .icon-wrapper {
 footer .social-icons {
   line-height: 40px;
   font-size: 18px;
-  transition: all ease-in-out 600ms;
+  transition: var(--common-transition);
 }
 footer .icon-wrapper:hover {
   transform: rotateZ(90deg) scale(1.2);
@@ -157,7 +158,7 @@ footer .third-img-wrapper .social-icons:hover {
 footer .contact-me-box {
   display: flex;
   justify-content: space-between;
-  background-color: #f148e92e;
+  background-color: var(--primary-bg-color);
   padding: 30px 80px;
 }
 .footer .primary-link {
@@ -187,7 +188,7 @@ footer p a:hover {
 
 .homepage .top-section,
 .contact .top-section {
-  background-color: #f148e92e;
+  background-color: var(--primary-bg-color);
 }
 .homepage .top-section h2 {
   font-weight: 400;
@@ -201,8 +202,7 @@ footer p a:hover {
   opacity: 0.7;
   font-style: italic;
 }
-
-.projects{
+.projects {
   box-shadow: var(--box-shadow);
 }
 img {
@@ -222,6 +222,9 @@ img {
 .project-description a {
   color: white;
   text-shadow: var(--text-shadow);
+}
+.projects .color-tab {
+  transition: var(--common-transition);
 }
 .first-img-wrapper {
   background-color: var(--first-bg-color);
@@ -523,7 +526,7 @@ img {
     top: 74px;
     margin: -0.5px 0 0;
     left: -100%;
-    background-color: rgba(254, 201, 233, 0.974);
+    background-color: var(--secondary-bg-color);
     transition: all ease-in-out 1000ms;
   }
   .nav-menu.active {
@@ -551,8 +554,8 @@ img {
   }
 }
 
-@media (max-width: 768px){
-  #projects-display{
+@media (max-width: 768px) {
+  #projects-display {
     margin: auto 30px;
   }
 }
