@@ -591,6 +591,15 @@ img {
   .projects .color-tab {
     border-width: 20px;
   }
+  .projects .right-color-tab {
+    padding-right: 27px;
+  }
+  .projects .left-color-tab {
+    padding-left: 27px;
+  }
+  .projects:hover > .color-tab {
+    border-width: 35px;
+  }
 
   .about img {
     width: 300px;
