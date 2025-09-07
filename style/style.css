@@ -229,6 +229,18 @@ img {
 .projects .color-tab {
   transition: var(--common-transition);
 }
+.projects .right-color-tab {
+  border-right-style: solid;
+  border-right-width: 35px;
+}
+.projects .left-color-tab {
+  border-left-style: solid;
+  border-left-width: 35px;
+}
+.projects:hover > .color-tab {
+  padding: 0 12px;
+}
+
 .first-img-wrapper {
   background-color: var(--first-bg-color);
 }
@@ -241,8 +253,7 @@ img {
   background-color: var(--first-bg-color);
 }
 .first-project .color-tab {
-  border-right: 35px solid var(--first-neon-color);
-  transition: all ease-in-out 600ms;
+  border-color: var(--first-neon-color);
 }
 .second-img-wrapper {
   background-color: var(--second-bg-color);
@@ -256,8 +267,7 @@ img {
   color: var(--second-neon-color);
 }
 .second-project .color-tab {
-  border-left: 35px solid var(--second-neon-color);
-  transition: all ease-in-out 600ms;
+  border-color: var(--second-neon-color);
 }
 .third-img-wrapper {
   background-color: var(--third-bg-color);
@@ -271,8 +281,7 @@ img {
   color: #efef00;
 }
 .third-project .color-tab {
-  border-right: 35px solid var(--third-neon-color);
-  transition: all ease-in-out 600ms;
+  border-color: var(--third-neon-color);
 }
 .grid-footer a {
   text-decoration: none;
