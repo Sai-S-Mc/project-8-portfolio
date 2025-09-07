@@ -466,14 +466,24 @@ img {
   .project-description h2 {
     font-size: 48px;
   }
+  .projects .right-color-tab {
+    padding-right: 22px;
+  }
+  .projects .left-color-tab {
+    padding-left: 22px;
+  }
+  .projects:hover > .color-tab {
+    border-width: 45px;
+    padding: 0 12px;
+  }
   .first-project:hover > .color-tab {
-    border-right: 45px solid var(--first-neon-color);
+    border-color: var(--first-neon-color);
   }
   .second-project:hover > .color-tab {
-    border-left: 45px solid var(--second-neon-color);
+    border-color: var(--second-neon-color);
   }
   .third-project:hover > .color-tab {
-    border-right: 45px solid var(--third-neon-color);
+    border-color: var(--third-neon-color);
   }
 
   .about img {
