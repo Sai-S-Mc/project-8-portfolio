@@ -388,7 +388,7 @@ img {
     font-size: 24px;
   }
   footer h2 {
-    font-size: 48px;
+    font-size: 42px;
   }
   footer .primary-link {
     padding: 20px 40px;
@@ -441,7 +441,7 @@ img {
   .homepage h1 {
     font-size: 65px;
   }
-  .homepage h2 {
+  .homepage .top-section h2 {
     font-size: 20px;
   }
   .project-description {
@@ -514,7 +514,8 @@ img {
     text-align: center;
     width: 100%;
     top: 74px;
-    margin: -0.5px 0 0;
+    margin: -0.6px 0 0;
+    border-top: 1px solid #ffd8f0;
     left: -100%;
     background-color: var(--secondary-bg-color);
     transition: all ease-in-out 1000ms;
@@ -542,6 +543,9 @@ img {
   #projects-display {
     margin: auto 30px;
   }
+  footer span {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 510px) {
@@ -559,7 +563,7 @@ img {
     font-size: 38px;
   }
 
-  .projects .color-tab{
+  .projects .color-tab {
     border-width: 20px;
   }
 
