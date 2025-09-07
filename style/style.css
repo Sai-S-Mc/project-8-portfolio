@@ -413,6 +413,12 @@ img {
   .project-description h2 {
     font-size: 50px;
   }
+  .projects .right-color-tab {
+    padding-right: 32px;
+  }
+  .projects .left-color-tab {
+    padding-left: 32px;
+  }
   .projects:hover > .color-tab {
     border-width: 55px;
   }
