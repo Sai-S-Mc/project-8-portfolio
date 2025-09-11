@@ -384,6 +384,15 @@ img {
     width: 500px;
     height: 500px;
   }
+
+  .work .buttons-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .work .buttons-container a:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -581,6 +590,7 @@ img {
 
 @media (max-width: 520px) {
   .buttons-container {
+    display: flex;
     flex-direction: column;
   }
   .buttons-container a:first-child {
