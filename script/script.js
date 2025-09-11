@@ -16,11 +16,17 @@ function toggleClassBasedOnViewportWidth() {
   }
 
   if (footerSpanElement) {
-    if (window.innerWidth < 991) {
+    if (window.innerWidth < 991.5) {
       footerSpanElement.classList.replace("ps-2", "ps-1");
     } else {
-      footerSpanElement.classList.replace("ps-1","ps-2");
+      footerSpanElement.classList.replace("ps-1", "ps-2");
     }
+  }
+
+  if (window.innerWidth < 520.5) {
+    resumeButtonElement.innerText = "My resume";
+  } else{
+    resumeButtonElement.innerText = "View my resume";
   }
 }
 
@@ -34,6 +40,10 @@ let footerTextElement = document.querySelector(".contact-me-box div");
 let footerSpanElement = document.querySelector(
   ".contact-me-box span.text-muted"
 );
+let resumeButtonElement = document.querySelector(
+  ".buttons-container a:last-child"
+);
+console.log(resumeButtonElement);
 toggleClassBasedOnViewportWidth();
 
 let hamburgerElement = document.querySelector(".hamburger");

@@ -167,6 +167,9 @@ footer .contact-me-box {
 .footer .primary-link {
   margin-top: 12px;
 }
+.buttons-container a:first-child {
+  margin-right: 25px;
+}
 footer p {
   font-size: 14px;
 }
@@ -449,6 +452,9 @@ img {
   .footer h2 {
     font-size: 38px;
   }
+  footer .contact-me-box {
+    padding: 30px 20px;
+  }
 
   .homepage .above-heading {
     font-size: 28px;
@@ -570,6 +576,16 @@ img {
   }
   footer span {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .buttons-container {
+    flex-direction: column;
+  }
+  .buttons-container a:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
   }
 }
 
