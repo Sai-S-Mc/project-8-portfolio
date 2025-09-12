@@ -23,10 +23,12 @@ function toggleClassBasedOnViewportWidth() {
     }
   }
 
-  if (window.innerWidth < 520.5) {
-    resumeButtonElement.innerText = "My resume";
-  } else{
-    resumeButtonElement.innerText = "View my resume";
+  if (resumeButtonElement) {
+    if (window.innerWidth < 520.5) {
+      resumeButtonElement.innerText = "My resume";
+    } else {
+      resumeButtonElement.innerText = "View my resume";
+    }
   }
 }
 
