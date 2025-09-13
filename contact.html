@@ -179,34 +179,45 @@
             >
           </div>
           <div id="contact-form">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="name" class="form-label">Name</label>
+            <form class="row g-3 text-left">
+              <div class="col-md-4">
+                <label for="name" class="text-start form-label"
+                  >First Name<span class="opacity-50">*</span></label
+                >
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="col-md-4">
+                <label for="name" class="text-start form-label"
+                  >Last Name</label
+                >
                 <input type="text" class="form-control" id="name" />
               </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" />
+              <div class="col-md-4">
+                <label for="email" class="form-label"
+                  >Email<span class="opacity-50">*</span></label
+                >
+                <input type="email" class="form-control" id="email" required />
               </div>
               <div class="col-12">
-                <label for="message" class="form-label">Message</label>
+                <label for="message" class="form-label"
+                  >Message<span class="opacity-50">*</span></label
+                >
                 <textarea
                   name="message"
                   id="message"
                   class="form-control"
+                  rows="3"
+                  required
                 ></textarea>
               </div>
               <details>
                 <summary>I would like to attach a file:</summary>
                 <div class="col-12">
-                  <input
-                    name="file-upload"
-                    type="file"
-                    class="form-control"
-                  />
+                  <input name="file-upload" type="file" class="form-control" />
                 </div>
               </details>
               <div class="col-12">
+                <div class="form-text mb-4">Fields marked with an * are mandatory</div>
                 <button type="submit" class="btn btn-dark">Submit</button>
               </div>
             </form>
