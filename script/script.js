@@ -45,10 +45,13 @@ let footerSpanElement = document.querySelector(
 let resumeButtonElement = document.querySelector(
   ".buttons-container a:last-child"
 );
-console.log(resumeButtonElement);
 toggleClassBasedOnViewportWidth();
 
 let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
+
+function contactForm() {
+  alert("Clicked");
+}
