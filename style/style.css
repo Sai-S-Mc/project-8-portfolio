@@ -378,6 +378,32 @@ img {
 .third-link:hover {
   color: var(--third-neon-color);
 }
+.contact-form {
+  background-color: var(--primary-bg-color);
+  padding: 40px 30px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+.contact-form form{
+  border: 1px solid white;
+  box-shadow: 1px 1px 10px white;
+}
+.contact-form span, .contact-form summary::marker{
+  color: var(--primary-link-color);
+}
+.contact-form textarea::-webkit-resizer {
+  border-width: 8px;
+  border-style: double;
+  border-color: transparent var(--primary-link-color) var(--primary-link-color)
+    transparent;
+}
+.contact-form input[type="file"] {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.contact-form .primary-link {
+  transition: all ease-in-out 400ms;
+}
 
 @media (min-width: 1200px) {
   .about img {
