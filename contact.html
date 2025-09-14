@@ -181,16 +181,27 @@
           <div id="contact-form">
             <form class="row g-3 text-left">
               <div class="col-md-4">
-                <label for="name" class="text-start form-label"
+                <label for="first-name" class="text-start form-label" 
                   >First Name<span class="opacity-50">*</span></label
                 >
-                <input type="text" class="form-control" id="name" required />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  required
+                  autocomplete="given-name"
+                />
               </div>
               <div class="col-md-4">
-                <label for="name" class="text-start form-label"
+                <label for="last-name" class="text-start form-label"
                   >Last Name</label
                 >
-                <input type="text" class="form-control" id="name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  autocomplete="family-name"
+                />
               </div>
               <div class="col-md-4">
                 <label for="email" class="form-label"
