@@ -182,8 +182,8 @@
             <h5 class="mb-4 pb-3">I would love to hear from you</h5>
             <form class="row g-4 pb-4 text-left rounded">
               <div class="col-md-4">
-                <label for="first-name" class="text-start form-label" 
-                  >First Name<span class="opacity-50">*</span></label
+                <label for="first-name" class="text-start form-label"
+                  >First Name<span>*</span></label
                 >
                 <input
                   type="text"
@@ -206,13 +206,13 @@
               </div>
               <div class="col-md-4">
                 <label for="email" class="form-label"
-                  >Email<span class="opacity-50">*</span></label
+                  >Email<span>*</span></label
                 >
                 <input type="email" class="form-control" id="email" required />
               </div>
               <div class="col-12">
                 <label for="message" class="form-label"
-                  >Message<span class="opacity-50">*</span></label
+                  >Message<span>*</span></label
                 >
                 <textarea
                   name="message"
@@ -225,14 +225,20 @@
               <details>
                 <summary>I would like to attach a file:</summary>
                 <div class="col-12">
-                  <input name="file-upload" type="file" class="form-control mt-3" />
+                  <input
+                    name="file-upload"
+                    type="file"
+                    class="form-control mt-3"
+                  />
                 </div>
               </details>
               <div class="col-12">
                 <div class="form-text mb-4">
-                  Fields marked with an * are mandatory
+                  Fields marked with an <span>*</span> are mandatory
                 </div>
-                <button type="submit" class="btn shadow primary-link">Submit</button>
+                <button type="submit" class="btn shadow primary-link">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
