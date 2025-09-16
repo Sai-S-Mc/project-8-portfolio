@@ -180,7 +180,16 @@
           </div>
           <div id="contact-form" class="rounded contact-form">
             <h5 class="mb-4 pb-3">I would love to hear from you</h5>
-            <form class="row g-4 pb-4 text-left rounded">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="row g-4 pb-4 text-left rounded"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="aa21cdc7-18c1-4e23-b3d2-d9c5ce28d13c"
+              />
               <div class="col-md-4">
                 <label for="first-name" class="text-start form-label" 
                   >First Name<span>*</span></label
