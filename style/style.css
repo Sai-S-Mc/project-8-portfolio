@@ -612,6 +612,10 @@ img {
   footer span {
     font-size: 0.9rem;
   }
+  .contact-form input, .contact-form textarea{
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 520px) {
