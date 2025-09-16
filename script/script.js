@@ -54,4 +54,16 @@ window.addEventListener("resize", toggleClassBasedOnViewportWidth);
 
 function contactForm() {
   alert("Clicked");
-}
+}const form = document.querySelector("form");
+
+form.addEventListener("submit", function (e) {
+  const hCaptcha = form.querySelector(
+    "textarea[name=h-captcha-response]"
+  ).value;
+
+  if (!hCaptcha) {
+    e.preventDefault();
+    alert("Tiny step missed! Please check the I am human box to continue.");
+    return;
+  }
+});
