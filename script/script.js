@@ -2,39 +2,37 @@ function displayContactForm() {
   alert("form can now be displayed");
 }
 
+function handleApiResponse(response) {
+  console.log(response.data);
+  let submissionResultElement = document.getElementById("post-submit-section");
+  console.log(response.status);
+  if (response.status == 200) {
+    submissionResultElement.innerHTML =
+      "Message sent! I'll be in touch soon (and I'm already looking forward to it).";
+  } else {
+    console.log(response);
+    submissionResultElement.innerHTML =
+      "Hmm, something went wrong and your message didn't go through. Mind trying again?";
+  }
+}
+
 function makeApiCall(form) {
-  const result = document.getElementById("post-submit-section");
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-  result.innerHTML = "Please wait...";
 
-  fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: json,
-  })
-    .then(async (response) => {
-      let json = await response.json();
-      if (response.status == 200) {
-        result.innerHTML = json.message;
-      } else {
-        console.log(response);
-        result.innerHTML = json.message;
-      }
-    })
+  const apiUrl = "https://api.web3forms.com/submit";
+  let submissionResultElement = document.getElementById("post-submit-section");
+  let headers = {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  };
+
+  axios
+    .post(apiUrl, object, { headers: headers })
+    .then(handleApiResponse)
     .catch((error) => {
       console.log(error);
-      result.innerHTML = "Something went wrong!";
-    })
-    .then(function () {
-      form.reset();
-      setTimeout(() => {
-        result.style.display = "none";
-      }, 3000);
+      submissionResultElement.innerHTML = "Sorry something went wrong!";
     });
 }
 
@@ -113,4 +111,3 @@ let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
-
