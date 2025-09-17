@@ -1,3 +1,20 @@
+function displayContactForm() {
+  alert("form can now be displayed");
+}
+
+function validateCaptcha(event) {
+  let hCaptcha = form.querySelector("textarea[name=h-captcha-response]").value;
+  if (!hCaptcha) {
+    event.preventDefault();
+    alert("Tiny step missed! Please check the 'I am human' box to continue.");
+    return;
+  }
+}
+
+function handleFormSubmit(event) {
+  validateCaptcha(event);
+}
+
 function toggleClassBasedOnViewportWidth() {
   if (projectContainerElement) {
     if (window.innerWidth < 768.5) {
@@ -52,18 +69,4 @@ hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
 
-function contactForm() {
-  alert("Clicked");
-}const form = document.querySelector("form");
-
-form.addEventListener("submit", function (e) {
-  const hCaptcha = form.querySelector(
-    "textarea[name=h-captcha-response]"
-  ).value;
-
-  if (!hCaptcha) {
-    e.preventDefault();
-    alert("Tiny step missed! Please check the I am human box to continue.");
-    return;
-  }
-});
+let form = document.querySelector("form");
