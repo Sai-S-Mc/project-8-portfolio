@@ -2,16 +2,61 @@ function displayContactForm() {
   alert("form can now be displayed");
 }
 
+function makeApiCall(form) {
+  const result = document.getElementById("post-submit-section");
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 3000);
+    });
+}
+
 function validateCaptcha(event) {
-  let hCaptcha = form.querySelector("textarea[name=h-captcha-response]").value;
+  let formElement = document.querySelector("form");
+
+  let hCaptcha = formElement.querySelector(
+    "textarea[name=h-captcha-response]"
+  ).value;
   if (!hCaptcha) {
     event.preventDefault();
-    alert("Tiny step missed! Please check the 'I am human' box to continue.");
+    alert(
+      "Hate to be a bother, but hey — gotta do what we gotta do to keep spam away! Please check the 'I am human' box to continue."
+    );
     return;
+  } else {
+    makeApiCall(formElement);
   }
 }
 
 function handleFormSubmit(event) {
+  event.preventDefault();
   validateCaptcha(event);
 }
 
@@ -69,4 +114,3 @@ hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
 
-let form = document.querySelector("form");
