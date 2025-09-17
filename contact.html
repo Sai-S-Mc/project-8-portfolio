@@ -179,77 +179,81 @@
             >
           </div>
           <div id="contact-form" class="rounded contact-form">
-            <h5 class="mb-4 pb-3">I would love to hear from you</h5>
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              class="row g-4 pb-4 text-left rounded"
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="aa21cdc7-18c1-4e23-b3d2-d9c5ce28d13c"
-              />
-              <div class="col-md-4">
-                <label for="first-name" class="text-start form-label"
-                  >First Name<span>*</span></label
-                >
+            <div class="form-section-wrapper" id="form-section-wrapper">
+              <h5 class="mb-4 pb-3">I would love to hear from you</h5>
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="row g-4 pb-4 text-left rounded"
+                onsubmit="handleFormSubmit(event)"
+              >
                 <input
-                  type="text"
-                  class="form-control"
-                  id="first-name"
-                  name="first-name"
-                  required
-                  autocomplete="given-name"
+                  type="hidden"
+                  name="access_key"
+                  value="aa21cdc7-18c1-4e23-b3d2-d9c5ce28d13c"
                 />
-              </div>
-              <div class="col-md-4">
-                <label for="last-name" class="text-start form-label"
-                  >Last Name</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="last-name"
-                  name="last-name"
-                  autocomplete="family-name"
-                />
-              </div>
-              <div class="col-md-4">
-                <label for="email" class="form-label"
-                  >Email<span>*</span></label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="message" class="form-label"
-                  >Message<span>*</span></label
-                >
-                <textarea
-                  name="message"
-                  id="message"
-                  class="form-control"
-                  rows="3"
-                  required
-                ></textarea>
-              </div>
-              <input type="checkbox" name="botcheck" class="hidden" />
-              <div class="col-12">
-                <div class="form-text mb-4">
-                  Fields marked with an <span>*</span> are mandatory
+                <div class="col-md-4">
+                  <label for="first-name" class="text-start form-label"
+                    >First Name<span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    autocomplete="given-name"
+                  />
                 </div>
-                <div class="h-captcha" data-captcha="true"></div>
-                <button type="submit" class="btn mt-4 shadow primary-link">
-                  Submit
-                </button>
-              </div>
-            </form>
+                <div class="col-md-4">
+                  <label for="last-name" class="text-start form-label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    name="last-name"
+                    autocomplete="family-name"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="email" class="form-label"
+                    >Email<span>*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label"
+                    >Message<span>*</span></label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form-control"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <input type="checkbox" name="botcheck" class="hidden" />
+                <div class="col-12">
+                  <div class="form-text mb-4">
+                    Fields marked with an <span>*</span> are mandatory
+                  </div>
+                  <div class="h-captcha" data-captcha="true"></div>
+                  <button type="submit" class="btn mt-4 shadow primary-link">
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <div class="post-submit-section" id="post-submit-section"></div>
+            </div>
           </div>
         </main>
       </div>
