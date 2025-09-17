@@ -1,5 +1,17 @@
+function updateFormLink(formContainer) {
+  console.log(formContainer)
+  if (formContainer.classList.contains("hidden")) {
+    return "Show me the form";
+  } else {
+    return "Hide the form";
+  }
+}
+
 function displayContactForm() {
-  alert("form can now be displayed");
+  let contactFormElement = document.getElementById("contact-form");
+  let formLinkElement = document.querySelector(".show-form-link");
+  contactFormElement.classList.toggle("hidden");
+  formLinkElement.innerHTML = updateFormLink(contactFormElement);
 }
 
 function handleApiResponse(response) {
