@@ -42,23 +42,39 @@ function resetFormSection() {
   setTimeout(() => {
     toggleFullFormSection();
     toggleFormLink();
+    toggleSubmissionResult();
     formHeading.innerHTML = "I would love to hear from you";
   }, 11000);
 }
 
-function handleApiResponse(response) {
-  console.log(response.data);
+function toggleSubmissionResult(responseStatus = "") {
   let submissionResultElement = document.getElementById("post-submit-section");
-  console.log(response.status);
-  if (response.status == 200) {
-    submissionResultElement.innerHTML =
-      "Message sent! I'll be in touch soon (and I'm already looking forward to it).";
-    resetFormSection();
+  submissionResultElement.classList.toggle("hidden");
+  let result;
+  console.log(responseStatus);
+  if (responseStatus) {
+    if (responseStatus == 200) {
+      result =
+        "Message sent! I'll be in touch soon (and I'm already looking forward to it).";
+      resetFormSection();
+    } else {
+      result =
+        "Hmm, something went wrong and your message didn't go through. Mind trying again?";
+      setTimeout(() => {
+        submissionResultElement.classList.toggle("hidden");
+        result = "";
+      }, 8000);
+    }
   } else {
-    console.log(response);
-    submissionResultElement.innerHTML =
-      "Hmm, something went wrong and your message didn't go through. Mind trying again?";
+    result = "";
   }
+  submissionResultElement.innerHTML = result;
+}
+
+function handleApiResponse(response) {
+  toggleSubmissionResult(response.status);
+  console.log(response.data);
+  console.log(response.status);
 }
 
 function makeApiCall(form) {
@@ -83,7 +99,6 @@ function makeApiCall(form) {
 
 function validateCaptcha(event) {
   let formElement = document.querySelector("form");
-
   let hCaptcha = formElement.querySelector(
     "textarea[name=h-captcha-response]"
   ).value;
