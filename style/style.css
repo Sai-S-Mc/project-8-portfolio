@@ -697,6 +697,10 @@ img {
   }
 }
 
+.captcha-check {
+  overflow-x:scroll;
+}
+
 summary::marker {
   color: #f94090;
 }
