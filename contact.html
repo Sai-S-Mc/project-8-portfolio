@@ -166,7 +166,7 @@
                 href="#contact-form"
                 title="contact form"
                 class="social-icons"
-                onclick="displayContactForm()"
+                onclick="toggleContactForm()"
               >
                 <i class="fa-solid fa-file-lines"></i>
               </a>
@@ -176,7 +176,7 @@
               href="#contact-form"
               title="contact form"
               class="opacity-75 first-link text-link show-form-link"
-              onclick="displayContactForm()"
+              onclick="toggleContactForm()"
               >Show me the form</a
             >
           </div>
@@ -184,7 +184,7 @@
             <div class="form-section-wrapper" id="form-section-wrapper">
               <h5 class="mb-4 pb-3">I would love to hear from you</h5>
               <form
-                class="row g-4 pb-4 text-left rounded"
+                class="row g-4 pb-4 text-left rounded hidden"
                 onsubmit="handleFormSubmit(event)"
               >
                 <input
@@ -252,8 +252,8 @@
                   </button>
                 </div>
               </form>
-              <div class="post-submit-section" id="post-submit-section"></div>
             </div>
+            <div class="post-submit-section" id="post-submit-section"></div>
           </div>
         </main>
       </div>

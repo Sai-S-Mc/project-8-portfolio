@@ -1,17 +1,49 @@
-function updateFormLink(formContainer) {
-  console.log(formContainer)
-  if (formContainer.classList.contains("hidden")) {
-    return "Show me the form";
+function toggleFormLink() {
+  let fullFormSection = document.getElementById("contact-form");
+  let formLinkElement = document.querySelector(".show-form-link");
+  let result;
+  if (fullFormSection.classList.contains("hidden")) {
+    result = "Show me ";
   } else {
-    return "Hide the form";
+    result = "Hide ";
   }
+  formLinkElement.innerHTML = `${result} the form`;
 }
 
-function displayContactForm() {
-  let contactFormElement = document.getElementById("contact-form");
-  let formLinkElement = document.querySelector(".show-form-link");
-  contactFormElement.classList.toggle("hidden");
-  formLinkElement.innerHTML = updateFormLink(contactFormElement);
+function toggleFullFormSection() {
+  let fullFormSection = document.getElementById("contact-form");
+  fullFormSection.classList.toggle("hidden");
+}
+
+function toggleForm() {
+  let formElement = document.querySelector("form");
+  formElement.classList.toggle("hidden");
+}
+
+function toggleContactForm() {
+  toggleFullFormSection();
+  toggleForm();
+  toggleFormLink();
+}
+
+function resetFormSection() {
+  let formElement = document.querySelector("form");
+  let formHeading = document.querySelector("#contact-form h5");
+  formHeading.innerHTML = "Resetting form in 5 seconds";
+
+  setTimeout(() => {
+    formElement.reset();
+    formHeading.innerHTML = "Form disappearing in 2 seconds";
+  }, 5000);
+  setTimeout(() => {
+    toggleForm();
+    formHeading.innerHTML = "This confirmation goes poof in 4 seconds";
+  }, 7000);
+  setTimeout(() => {
+    toggleFullFormSection();
+    toggleFormLink();
+    formHeading.innerHTML = "I would love to hear from you";
+  }, 11000);
 }
 
 function handleApiResponse(response) {
@@ -21,6 +53,7 @@ function handleApiResponse(response) {
   if (response.status == 200) {
     submissionResultElement.innerHTML =
       "Message sent! I'll be in touch soon (and I'm already looking forward to it).";
+    resetFormSection();
   } else {
     console.log(response);
     submissionResultElement.innerHTML =
