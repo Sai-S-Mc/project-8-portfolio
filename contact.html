@@ -247,13 +247,24 @@
                     Fields marked with an <span>*</span> are mandatory
                   </div>
                   <div class="h-captcha" data-captcha="true"></div>
-                  <button type="submit" class="btn mt-4 shadow primary-link">
-                    Submit
-                  </button>
+                  <div class="form-buttons-wrapper mt-4">
+                    <button type="submit" class="btn shadow primary-link">
+                      Submit
+                    </button>
+                    <button
+                      type="reset"
+                      class="btn shadow primary-link"
+                      onclick="handleReset()"
+                    >
+                      Reset
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
-            <div class="post-submit-section hidden" id="post-submit-section">Results</div>
+            <div class="post-submit-section hidden" id="post-submit-section">
+              Results
+            </div>
           </div>
         </main>
       </div>

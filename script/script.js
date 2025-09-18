@@ -1,3 +1,9 @@
+function handleReset() {
+  alert(
+    "All the information entered will be lost. Are you sure you want to reset the form?"
+  );
+}
+
 function toggleFormLink() {
   let fullFormSection = document.getElementById("contact-form");
   let formLinkElement = document.querySelector(".show-form-link");
