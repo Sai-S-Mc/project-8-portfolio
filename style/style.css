@@ -251,43 +251,43 @@ img {
 .first-img-wrapper {
   background-color: var(--first-bg-color);
 }
-.first-project a {
+.first-color-group a {
   background-color: var(--first-neon-color);
 }
-.first-project a:hover {
+.first-color-group a:hover {
   outline-color: var(--first-neon-color);
   color: var(--first-neon-color);
   background-color: var(--first-bg-color);
 }
-.first-project .color-tab {
+.first-color-group .color-tab {
   border-color: var(--first-neon-color);
 }
 .second-img-wrapper {
   background-color: var(--second-bg-color);
 }
-.second-project a {
+.second-color-group a {
   background-color: var(--second-neon-color);
 }
-.second-project a:hover {
+.second-color-group a:hover {
   background-color: var(--second-bg-color);
   outline-color: var(--second-neon-color);
   color: var(--second-neon-color);
 }
-.second-project .color-tab {
+.second-color-group .color-tab {
   border-color: var(--second-neon-color);
 }
 .third-img-wrapper {
   background-color: var(--third-bg-color);
 }
-.third-project a {
+.third-color-group a {
   background-color: var(--third-neon-color);
 }
-.third-project a:hover {
+.third-color-group a:hover {
   background-color: var(--third-bg-color);
   outline-color: var(--third-neon-color);
   color: #efef00;
 }
-.third-project .color-tab {
+.third-color-group .color-tab {
   border-color: var(--third-neon-color);
 }
 .grid-footer a {
@@ -331,13 +331,13 @@ img {
 .work .content h2 a:hover {
   text-shadow: var(--text-shadow);
 }
-.work .first-project + h2 a:hover {
+.work .first-color-group + h2 a:hover {
   color: var(--first-neon-color);
 }
-.work .second-project + h2 a:hover {
+.work .second-color-group + h2 a:hover {
   color: var(--second-neon-color);
 }
-.work .third-project + h2 a:hover {
+.work .third-color-group + h2 a:hover {
   color: var(--third-neon-color);
 }
 
@@ -543,13 +543,13 @@ input:-webkit-autofill:active  {
     border-width: 45px;
     padding: 0 12px;
   }
-  .first-project:hover > .color-tab {
+  .first-color-group:hover > .color-tab {
     border-color: var(--first-neon-color);
   }
-  .second-project:hover > .color-tab {
+  .second-color-group:hover > .color-tab {
     border-color: var(--second-neon-color);
   }
-  .third-project:hover > .color-tab {
+  .third-color-group:hover > .color-tab {
     border-color: var(--third-neon-color);
   }
 
