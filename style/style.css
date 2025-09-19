@@ -393,6 +393,10 @@ img {
   border: 1px solid white;
   box-shadow: 1px 1px 10px white;
 }
+.form-link:focus-visible {
+  outline: 1px solid var(--first-neon-color);
+  padding: 3px;
+}
 .contact-form span {
   color: var(--primary-link-color);
 }
