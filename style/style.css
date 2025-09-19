@@ -384,11 +384,12 @@ img {
 }
 .contact-form {
   background-color: var(--primary-bg-color);
-  padding: 40px 30px;
+  padding: 40px 25px;
   margin: 30px auto;
-  max-width: 900px;
+  max-width: 950px;
 }
-.contact-form form {
+.contact-form form,
+.contact-form .post-submit-section {
   border: 1px solid white;
   box-shadow: 1px 1px 10px white;
 }
@@ -676,6 +677,12 @@ img {
   }
 }
 
+@media (max-width: 400px) {
+  .captcha-check {
+    overflow-x: scroll;
+  }
+}
+
 @media (max-width: 360px) {
   footer .icon-wrapper {
     margin: 15px;
@@ -697,10 +704,7 @@ img {
   }
 }
 
-.captcha-check {
-  overflow-x:scroll;
 }
-
 summary::marker {
   color: #f94090;
 }

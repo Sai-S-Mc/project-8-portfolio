@@ -56,18 +56,20 @@ function resetFormSection() {
 function toggleSubmissionResult(responseStatus = "") {
   let submissionResultElement = document.getElementById("post-submit-section");
   submissionResultElement.classList.toggle("hidden");
+  submissionResultElement.classList.toggle("mt-4");
   let result;
   console.log(responseStatus);
   if (responseStatus) {
     if (responseStatus == 200) {
       result =
-        "Message sent! I'll be in touch soon (and I'm already looking forward to it).";
+        "Message sent! I'll be in touch soon (and I'm already looking forward to it)";
       resetFormSection();
     } else {
       result =
         "Hmm, something went wrong and your message didn't go through. Mind trying again?";
       setTimeout(() => {
         submissionResultElement.classList.toggle("hidden");
+        submissionResultElement.classList.toggle("mt-4");
         result = "";
       }, 8000);
     }
