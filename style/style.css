@@ -251,12 +251,14 @@ img {
 .first-img-wrapper {
   background-color: var(--first-bg-color);
 }
-.first-color-group a {
+.first-color-group summary::marker, .first-color-group a:hover{
+  color: var(--first-neon-color);
+}
+.first-color-group a{
   background-color: var(--first-neon-color);
 }
 .first-color-group a:hover {
   outline-color: var(--first-neon-color);
-  color: var(--first-neon-color);
   background-color: var(--first-bg-color);
 }
 .first-color-group .color-tab {
@@ -265,13 +267,15 @@ img {
 .second-img-wrapper {
   background-color: var(--second-bg-color);
 }
+.second-color-group summary::marker, .second-color-group a:hover{
+  color: var(--second-neon-color);
+}
 .second-color-group a {
   background-color: var(--second-neon-color);
 }
 .second-color-group a:hover {
   background-color: var(--second-bg-color);
   outline-color: var(--second-neon-color);
-  color: var(--second-neon-color);
 }
 .second-color-group .color-tab {
   border-color: var(--second-neon-color);
@@ -279,13 +283,16 @@ img {
 .third-img-wrapper {
   background-color: var(--third-bg-color);
 }
+
+.third-color-group summary::marker, .third-color-group a:hover{
+  color: #efef00;
+}
 .third-color-group a {
   background-color: var(--third-neon-color);
 }
 .third-color-group a:hover {
   background-color: var(--third-bg-color);
   outline-color: var(--third-neon-color);
-  color: #efef00;
 }
 .third-color-group .color-tab {
   border-color: var(--third-neon-color);
