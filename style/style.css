@@ -382,6 +382,10 @@ img {
 .third-link:hover {
   color: var(--third-neon-color);
 }
+.form-link:focus-visible {
+  outline: 1px solid var(--first-neon-color);
+  padding: 3px;
+}
 .contact-form {
   background-color: var(--primary-bg-color);
   padding: 40px 25px;
@@ -393,9 +397,20 @@ img {
   border: 1px solid white;
   box-shadow: 1px 1px 10px white;
 }
-.form-link:focus-visible {
-  outline: 1px solid var(--first-neon-color);
-  padding: 3px;
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.form-control{
+  font-size: 15px;
+  caret-color: var(--first-neon-color);
+  caret-color: var(--primary-link-color);
+}
+.form-control:focus{
+  box-shadow: 1px 1px 15px white;
+  border-color: var(--primary-bg-color);
 }
 .contact-form span {
   color: var(--primary-link-color);
