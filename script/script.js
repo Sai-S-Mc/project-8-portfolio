@@ -6,7 +6,7 @@ function handleReset() {
 
 function toggleFormLink() {
   let fullFormSection = document.getElementById("contact-form");
-  let formLinkElement = document.querySelector(".show-form-link");
+  let formLinkElement = document.querySelector(".form-link");
   let result;
   if (fullFormSection.classList.contains("hidden")) {
     result = "Show me ";
