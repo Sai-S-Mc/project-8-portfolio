@@ -229,11 +229,30 @@ img {
   font-size: 18px;
   color: #4d5154;
 }
-summary::marker {
-  display: block;
-  font-size: 18px !important;
+summary {
+  list-style: none;
 }
-  font-size: 18px !important;
+summary::-webkit-details-marker {
+  display: none;
+}
+details summary::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 50%;
+  padding: 0 7px;
+  text-shadow: var(--text-shadow);
+  box-shadow: var();
+}
+details[open] summary::before {
+  content: "-";
+  padding: 0 8px;
+}
+details {
+  width: fit-content;
+  text-align: left;
+}
 }
 .project-description a {
   color: white;
@@ -257,10 +276,10 @@ summary::marker {
 .first-img-wrapper {
   background-color: var(--first-bg-color);
 }
-.first-color-group summary::marker,
 .first-color-group a:hover {
   color: var(--first-neon-color);
 }
+.first-color-group details summary::before,
 .first-color-group a {
   background-color: var(--first-neon-color);
 }
@@ -274,10 +293,10 @@ summary::marker {
 .second-img-wrapper {
   background-color: var(--second-bg-color);
 }
-.second-color-group summary::marker,
 .second-color-group a:hover {
   color: var(--second-neon-color);
 }
+.second-color-group details summary::before,
 .second-color-group a {
   background-color: var(--second-neon-color);
 }
@@ -292,10 +311,10 @@ summary::marker {
   background-color: var(--third-bg-color);
 }
 
-.third-color-group summary::marker,
 .third-color-group a:hover {
   color: #efef00;
 }
+.third-color-group details summary::before,
 .third-color-group a {
   background-color: var(--third-neon-color);
 }
@@ -685,9 +704,6 @@ input:-webkit-autofill:active {
   }
   .project-description h2 {
     font-size: 38px;
-  }
-  summary::marker {
-    font-size: 16px !important;
   }
 
   .projects .color-tab {
