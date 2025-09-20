@@ -248,13 +248,18 @@ img {
   padding: 0 12px;
 }
 
+summary::marker {
+  font-size: 18px;
+}
+
 .first-img-wrapper {
   background-color: var(--first-bg-color);
 }
-.first-color-group summary::marker, .first-color-group a:hover{
+.first-color-group summary::marker,
+.first-color-group a:hover {
   color: var(--first-neon-color);
 }
-.first-color-group a{
+.first-color-group a {
   background-color: var(--first-neon-color);
 }
 .first-color-group a:hover {
@@ -267,7 +272,8 @@ img {
 .second-img-wrapper {
   background-color: var(--second-bg-color);
 }
-.second-color-group summary::marker, .second-color-group a:hover{
+.second-color-group summary::marker,
+.second-color-group a:hover {
   color: var(--second-neon-color);
 }
 .second-color-group a {
@@ -284,7 +290,8 @@ img {
   background-color: var(--third-bg-color);
 }
 
-.third-color-group summary::marker, .third-color-group a:hover{
+.third-color-group summary::marker,
+.third-color-group a:hover {
   color: #efef00;
 }
 .third-color-group a {
@@ -405,17 +412,17 @@ img {
   box-shadow: 1px 1px 10px white;
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
-.form-control{
+.form-control {
   font-size: 15px;
   caret-color: var(--first-neon-color);
   caret-color: var(--primary-link-color);
 }
-.form-control:focus{
+.form-control:focus {
   box-shadow: 1px 1px 15px white;
   border-color: var(--primary-bg-color);
 }
@@ -671,6 +678,9 @@ input:-webkit-autofill:active  {
   .homepage h1 {
     font-size: 55px;
   }
+  summary::marker{
+    font-size: 16px;
+  }
   .project-description {
     padding: 40px 0;
   }
@@ -731,6 +741,4 @@ input:-webkit-autofill:active  {
 }
 
 }
-summary::marker {
-  color: #f94090;
 }
