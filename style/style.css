@@ -475,6 +475,18 @@ input:-webkit-autofill:active {
   width: 85px;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
 @media (min-width: 1200px) {
   .about img {
     width: 500px;
@@ -682,10 +694,6 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 768px) {
-  #projects-display {
-    margin: auto 30px;
-  }
-  
   footer span {
     font-size: 0.9rem;
   }

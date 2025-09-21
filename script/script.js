@@ -136,14 +136,6 @@ function toggleClassBasedOnViewportWidth() {
     }
   }
 
-  if (projectContainerElement) {
-    if (window.innerWidth < 768.5) {
-      projectContainerElement.classList.remove("container");
-    } else {
-      projectContainerElement.classList.add("container");
-    }
-  }
-
   if (footerTextElement) {
     if (window.innerWidth < 801) {
       footerTextElement.classList.add("mb-3");
@@ -174,7 +166,6 @@ function activateHamburger() {
   document.querySelector(".nav-menu").classList.toggle("active");
 }
 
-let projectContainerElement = document.querySelector("#projects-display");
 let footerTextElement = document.querySelector(".contact-me-box div");
 let footerSpanElement = document.querySelector(
   ".contact-me-box span.text-muted"
