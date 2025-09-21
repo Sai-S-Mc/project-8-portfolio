@@ -123,6 +123,13 @@ nav a {
   outline-color: var(--primary-link-color);
   color: var(--primary-link-color);
 }
+.sm-links {
+  padding: 5px;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 40%;
+  max-width: 120px;
+}
 .icon-wrapper {
   width: 100px;
   height: 100px;
@@ -678,9 +685,11 @@ input:-webkit-autofill:active {
   #projects-display {
     margin: auto 30px;
   }
+  
   footer span {
     font-size: 0.9rem;
   }
+
   .contact-form input,
   .contact-form textarea {
     max-width: 400px;
@@ -713,7 +722,35 @@ input:-webkit-autofill:active {
   .project-description h2 {
     font-size: 38px;
   }
-
+  .sm-links {
+    display: block;
+  }
+  details .content-wrapper {
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 10px;
+    right: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.482);
+    text-align: left;
+    padding-inline-end: 20px;
+  }
+  .first-color-group details .content-wrapper {
+    border-color: var(--first-neon-color);
+    background-color: var(--first-bg-color);
+  }
+  .second-color-group details .content-wrapper {
+    border-color: var(--second-neon-color);
+    background-color: var(--second-bg-color);
+  }
+  .third-color-group details .content-wrapper {
+    border-width: 2px;
+    border-color: var(--third-neon-color);
+    background-color: var(--third-bg-color);
+  }
   .projects .color-tab {
     border-width: 20px;
   }
@@ -763,31 +800,5 @@ input:-webkit-autofill:active {
     width: 200px;
     height: 200px;
     margin: 10px;
-  }
-}
-
-@media (max-width: 510px) {
-  details ul {
-    position: absolute;
-    background-color: var(--first-bg-color);
-    border: 1px solid #f94090;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-inline-end: 20px;
-    left: 10px;
-    right: 10px;
-  .first-color-group details ul {
-    border-color: var(--first-neon-color);
-    background-color: var(--first-bg-color);
-  }
-  .second-color-group details ul {
-    border-color: var(--second-neon-color);
-    background-color: var(--second-bg-color);
-  }
-  .third-color-group details ul {
-    border-width: 2px;
-    border-color: var(--third-neon-color);
-    background-color: var(--third-bg-color);
   }
 }

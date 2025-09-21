@@ -127,6 +127,15 @@ function handleFormSubmit(event) {
 }
 
 function toggleClassBasedOnViewportWidth() {
+  if (detailBtnElement) {
+    console.log(detailBtnElement);
+    if (window.innerWidth < 510.5) {
+      detailBtnElement.classList.remove("hidden");
+    } else {
+      detailBtnElement.classList.add("hidden");
+    }
+  }
+
   if (projectContainerElement) {
     if (window.innerWidth < 768.5) {
       projectContainerElement.classList.remove("container");
@@ -173,6 +182,7 @@ let footerSpanElement = document.querySelector(
 let resumeButtonElement = document.querySelector(
   ".buttons-container a:last-child"
 );
+let detailBtnElement = document.querySelector(".sm-links");
 toggleClassBasedOnViewportWidth();
 
 let hamburgerElement = document.querySelector(".hamburger");
