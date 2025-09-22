@@ -600,17 +600,11 @@ input:-webkit-autofill:active {
     font-size: 20px;
   }
   .project-description {
-    text-align: center;
-    padding: 50px 0;
+    padding: 50px 0 50px 12px;
   }
   .project-description h2 {
-    font-size: 48px;
-  }
-  .projects details {
-    margin: auto;
-  }
-  .projects details[open] > summary {
     text-align: center;
+    font-size: 48px;
   }
   .projects .right-color-tab {
     padding-right: 22px;
@@ -768,6 +762,9 @@ input:-webkit-autofill:active {
   .project-description h2 {
     font-size: 38px;
   }
+  .project-description p{
+    font-size: 16px;
+  }
   .sm-links {
     display: block;
   }
@@ -776,8 +773,8 @@ input:-webkit-autofill:active {
     border-width: 1px;
     border-style: solid;
     margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     left: 10px;
     right: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.482);
