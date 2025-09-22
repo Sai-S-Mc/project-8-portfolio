@@ -250,7 +250,7 @@ details summary::before {
   border-radius: 50%;
   padding: 0 7px;
   text-shadow: var(--text-shadow);
-  box-shadow: var();
+  box-shadow: var(--box-shadow);
 }
 details[open] summary::before {
   content: "-";
@@ -353,14 +353,18 @@ details ul {
   background: linear-gradient(to top, #fdcbf18c 0%, #fdcbf181 1%, #e6dee9 100%);
   background-size: 100%;
 }
-.column {
-  padding: 20px 10px;
+.about main {
+  font-size: 15px;
 }
 .about img {
-  display: block;
-  margin: 0 auto;
+  float: right;
+  max-width: 350px;
+  min-width: 150px;
+  width: 30%;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
+  margin: 0 0 10px 10px;
+}
 }
 
 .work img {
@@ -488,11 +492,6 @@ input:-webkit-autofill:active {
 }
 
 @media (min-width: 1200px) {
-  .about img {
-    width: 500px;
-    height: 500px;
-  }
-
   .work .buttons-container {
     display: flex;
     flex-direction: column;
@@ -552,15 +551,10 @@ input:-webkit-autofill:active {
   .about .above-heading {
     font-size: 25px;
   }
-  .about img {
-    width: 450px;
-    height: 450px;
-  }
 }
 
 @media (max-width: 992px) {
   .top-section {
-    text-align: center;
     padding: 120px 20px 80px;
   }
   .above-heading {
@@ -619,12 +613,6 @@ input:-webkit-autofill:active {
   }
   .third-color-group:hover > .color-tab {
     border-color: var(--third-neon-color);
-  }
-
-  .about img {
-    margin-top: 30px;
-    width: 450px;
-    height: 450px;
   }
 
   .work main p {
@@ -690,6 +678,16 @@ input:-webkit-autofill:active {
     padding-right: 30px;
   }
 
+  .about .heading {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .about img {
+    border-radius: 50%;
+  }
+
   footer .contact-me-box {
     flex-direction: column;
     text-align: center;
@@ -702,6 +700,11 @@ input:-webkit-autofill:active {
 @media (max-width: 768px) {
   footer span {
     font-size: 0.9rem;
+  }
+
+  .about .top-section {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .contact-form input,
@@ -778,9 +781,17 @@ input:-webkit-autofill:active {
     border-width: 35px;
   }
 
+  .about .heading {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
   .about img {
-    width: 300px;
-    height: 300px;
+    margin: 15px auto 0;
+  }
+  .about main .links {
+    display: block;
+    margin: auto;
+    max-width: fit-content;
   }
 
   .form-buttons-wrapper {
@@ -804,9 +815,5 @@ input:-webkit-autofill:active {
   h1,
   .homepage h1 {
     font-size: 44px;
-  }
-
-  .about img {
-    display: none;
   }
 }
