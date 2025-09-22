@@ -124,11 +124,10 @@ nav a {
   color: var(--primary-link-color);
 }
 .sm-links {
-  padding: 5px;
+  padding: 6px;
   font-size: 14px;
   margin: 0 auto;
-  width: 40%;
-  max-width: 120px;
+  width: fit-content;
 }
 .icon-wrapper {
   width: 100px;
@@ -569,9 +568,6 @@ input:-webkit-autofill:active {
   .footer h2 {
     font-size: 38px;
   }
-  footer .contact-me-box {
-    padding: 30px 50px;
-  }
 
   .homepage .above-heading {
     font-size: 28px;
@@ -589,10 +585,10 @@ input:-webkit-autofill:active {
   .project-description h2 {
     font-size: 48px;
   }
-  details {
+  .projects details {
     margin: auto;
   }
-  details[open] > summary {
+  .projects details[open] > summary {
     text-align: center;
   }
   .projects .right-color-tab {
@@ -692,7 +688,7 @@ input:-webkit-autofill:active {
     flex-direction: column;
     text-align: center;
   }
-  footer .primary-link {
+  .links {
     font-size: 15px;
   }
 }
@@ -742,7 +738,7 @@ input:-webkit-autofill:active {
   .sm-links {
     display: block;
   }
-  details .content-wrapper {
+  .projects details .content-wrapper {
     position: absolute;
     border-width: 1px;
     border-style: solid;
@@ -792,6 +788,10 @@ input:-webkit-autofill:active {
     display: block;
     margin: auto;
     max-width: fit-content;
+  }
+
+  footer .contact-me-box {
+    padding: 30px;
   }
 
   .form-buttons-wrapper {
