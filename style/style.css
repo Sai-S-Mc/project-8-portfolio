@@ -856,3 +856,14 @@ input:-webkit-autofill:active {
     justify-content: space-between !important;
   }
 }
+
+.project-category{
+  background-color: var(--primary-bg-color);
+  opacity: 0.8;
+  margin-left: -20px;
+  margin-right: -20px;
+  box-shadow: 1px 1px 10px rgba(157, 157, 157, 0.379);
+  border-radius: 10px;
+  border-left: 3px solid var(--first-neon-color);
+  border-right: 3px solid var(--first-neon-color);
+}
