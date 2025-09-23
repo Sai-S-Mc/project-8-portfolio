@@ -762,7 +762,7 @@ input:-webkit-autofill:active {
   .project-description h2 {
     font-size: 38px;
   }
-  .project-description p{
+  .project-description p {
     font-size: 16px;
   }
   .sm-links {
@@ -857,13 +857,26 @@ input:-webkit-autofill:active {
   }
 }
 
-.project-category{
-  background-color: var(--primary-bg-color);
+.project-category {
   opacity: 0.8;
   margin-left: -20px;
   margin-right: -20px;
   box-shadow: 1px 1px 10px rgba(157, 157, 157, 0.379);
   border-radius: 10px;
-  border-left: 3px solid var(--first-neon-color);
-  border-right: 3px solid var(--first-neon-color);
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+.first-theme {
+  border-color: var(--first-neon-color);
+  background-color: var(--first-bg-color);
+}
+.second-theme {
+  border-color: var(--second-neon-color);
+  background-color: var(--second-bg-color);
+}
+.third-theme {
+  border-color: var(--third-neon-color);
+  background-color: var(--third-bg-color);
 }
