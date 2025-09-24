@@ -10,10 +10,10 @@
   --secondary-bg-color: rgba(254, 201, 233, 0.974);
   --first-bg-color: #fff3ff;
   --second-bg-color: #ffede2;
-  --third-bg-color: #ffffe4;
+  --third-bg-color: #fbf7e4;
   --first-neon-color: #f94090;
   --second-neon-color: #ff5e00;
-  --third-neon-color: #ffff33;
+  --third-neon-color: #FED700;   
   --common-transition: all ease-in-out 600ms;
 }
 
