@@ -819,6 +819,9 @@ input:-webkit-autofill:active {
     margin: auto;
     max-width: fit-content;
   }
+  .view-projects-links{
+    flex-direction: column;
+  }
 
   footer .contact-me-box {
     padding: 30px;
