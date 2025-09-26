@@ -32,25 +32,40 @@ function toggleContactForm() {
   toggleFormLink();
 }
 
+function updateFormHeading(context = "") {
+  let formHeading = document.querySelector("#contact-form h5");
+  let result;
+  if (context == "reset form") {
+    result = "Resetting form in 5 seconds";
+  } else if (context == "hide form") {
+    result = "Form disappearing in 2 seconds";
+  } else if (context == "hide result") {
+    result = "This confirmation goes poof if you click 'Okay'";
+  } else {
+    result = "I would love to hear from you";
+  }
+  formHeading.innerHTML = result;
+}
+
+function handleSubmissionOkayClick() {
+  toggleFullFormSection();
+  toggleFormLink();
+  toggleSubmissionResult();
+  updateFormHeading();
+}
+
 function resetFormSection() {
   let formElement = document.querySelector("form");
-  let formHeading = document.querySelector("#contact-form h5");
-  formHeading.innerHTML = "Resetting form in 5 seconds";
+  updateFormHeading("reset form");
 
   setTimeout(() => {
     formElement.reset();
-    formHeading.innerHTML = "Form disappearing in 2 seconds";
+    updateFormHeading("hide form");
   }, 5000);
   setTimeout(() => {
     toggleForm();
-    formHeading.innerHTML = "This confirmation goes poof in 4 seconds";
+    updateFormHeading("hide result");
   }, 7000);
-  setTimeout(() => {
-    toggleFullFormSection();
-    toggleFormLink();
-    toggleSubmissionResult();
-    formHeading.innerHTML = "I would love to hear from you";
-  }, 11000);
 }
 
 function toggleSubmissionResult(responseStatus = "") {
@@ -58,7 +73,6 @@ function toggleSubmissionResult(responseStatus = "") {
   submissionResultElement.classList.toggle("hidden");
   submissionResultElement.classList.toggle("mt-4");
   let result;
-  console.log(responseStatus);
   if (responseStatus) {
     if (responseStatus == 200) {
       result =
@@ -76,13 +90,11 @@ function toggleSubmissionResult(responseStatus = "") {
   } else {
     result = "";
   }
-  submissionResultElement.innerHTML = result;
+  submissionResultElement.innerHTML = `${result} <br/> <button class = "btn shadow primary-link mt-3" id = "submission-okay-button" onClick = "handleSubmissionOkayClick()"> Okay </button>`;
 }
 
 function handleApiResponse(response) {
   toggleSubmissionResult(response.status);
-  console.log(response.data);
-  console.log(response.status);
 }
 
 function makeApiCall(form) {
@@ -128,7 +140,6 @@ function handleFormSubmit(event) {
 
 function toggleClassBasedOnViewportWidth() {
   if (detailBtnElement) {
-    console.log(detailBtnElement);
     if (window.innerWidth < 510.5) {
       detailBtnElement.classList.remove("hidden");
     } else {
@@ -180,3 +191,6 @@ let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
+
+// let submissionOkayButtonElement = document.getElementById("submission-okay-button")
+// submissionOkayButtonElement.addEventListener("click", handleSubmissionOkayClick)
