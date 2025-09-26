@@ -144,14 +144,17 @@ nav a {
   border-color: var(--third-neon-color);
   background-color: var(--third-bg-color);
 }
-.first-color-group a:hover, .work .first-color-group a:hover{
+.first-color-group a:hover,
+.work .first-color-group a:hover {
   color: var(--first-neon-color);
 }
-.third-color-group a:hover {
-  color: var(--third-neon-color);
-}
-.second-color-group a:hover {
+.second-color-group a:hover,
+.work .second-color-group a:hover {
   color: var(--second-neon-color);
+}
+.third-color-group a:hover,
+.work .third-color-group a:hover {
+  color: var(--third-neon-color);
 }
 .first-img-wrapper {
   background-color: var(--first-bg-color);
@@ -325,33 +328,33 @@ details ul {
   padding: 0 12px;
 }
 
-.projects .first-color-group details summary::before,
-.projects .first-color-group a {
+.homepage .first-color-group details summary::before,
+.homepage .first-color-group a {
   background-color: var(--first-neon-color);
 }
-.projects .first-color-group a:hover {
+.homepage .first-color-group a:hover {
   outline-color: var(--first-neon-color);
   background-color: var(--first-bg-color);
 }
 .first-color-group .color-tab {
   border-color: var(--first-neon-color);
 }
-.projects .second-color-group details summary::before,
-.projects .second-color-group a {
+.homepage .second-color-group details summary::before,
+.homepage .second-color-group a {
   background-color: var(--second-neon-color);
 }
-.projects .second-color-group a:hover {
+.homepage .second-color-group a:hover {
   background-color: var(--second-bg-color);
   outline-color: var(--second-neon-color);
 }
 .second-color-group .color-tab {
   border-color: var(--second-neon-color);
 }
-.projects .third-color-group details summary::before,
-.projects .third-color-group a {
+.homepage .third-color-group details summary::before,
+.homepage .third-color-group a {
   background-color: var(--third-neon-color);
 }
-.projects .third-color-group a:hover {
+.homepage .third-color-group a:hover {
   background-color: var(--third-bg-color);
   outline-color: var(--third-neon-color);
 }
