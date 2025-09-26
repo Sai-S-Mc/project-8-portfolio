@@ -13,7 +13,7 @@
   --third-bg-color: #fbf7e4;
   --first-neon-color: #f94090;
   --second-neon-color: #ff5e00;
-  --third-neon-color: #FED700;   
+  --third-neon-color: #fed700;
   --common-transition: all ease-in-out 600ms;
 }
 
@@ -500,13 +500,13 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 1400px) {
-  .container {
+  .main-container {
     max-width: 90%;
   }
 }
 
 @media (min-width: 1400px) {
-  .container {
+  .main-container {
     max-width: 90%;
   }
 }
@@ -819,8 +819,12 @@ input:-webkit-autofill:active {
     margin: auto;
     max-width: fit-content;
   }
-  .view-projects-links{
+  .view-projects-links {
     flex-direction: column;
+  }
+
+  .contact .captcha-check {
+    overflow-x: scroll;
   }
 
   footer .contact-me-box {
@@ -843,12 +847,6 @@ input:-webkit-autofill:active {
   }
 }
 
-@media (max-width: 400px) {
-  .captcha-check {
-    overflow-x: scroll;
-  }
-}
-
 @media (max-width: 360px) {
   h1,
   .homepage h1 {
@@ -857,6 +855,10 @@ input:-webkit-autofill:active {
 
   footer .icons-container {
     justify-content: space-between !important;
+  }
+
+  .h-captcha {
+    transform: scale(0.8);
   }
 }
 
