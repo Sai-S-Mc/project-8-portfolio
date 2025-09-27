@@ -432,24 +432,9 @@ details ul {
 .work .content h2 a:hover {
   text-shadow: var(--text-shadow);
 }
-/* .work .first-color-group summary::before{
-background-color: var(--first-bg-color);
+.work details[open]{
+  margin-left: 0 !important;
 }
-.work .second-color-group summary::before{
-background-color: var(--second-bg-color);
-}
-.work .third-color-group summary::before{
-background-color: var(--third-bg-color);
-} */
-/* .work .first-color-group + h2 a:hover {
-  color: var(--first-neon-color);
-}
-.work .second-color-group + h2 a:hover {
-  color: var(--second-neon-color);
-}
-.work .third-color-group + h2 a:hover {
-  color: var(--third-neon-color);
-} */
 
 .contact main {
   display: block;
