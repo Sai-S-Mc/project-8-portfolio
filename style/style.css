@@ -419,6 +419,12 @@ details ul {
   width: 90%;
   max-width: 400px;
 }
+.work .img-wrapper {
+  transition: var(--common-transition);
+}
+.work .img-wrapper:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+}
 .work details {
   font-size: 14px;
 }
@@ -432,7 +438,7 @@ details ul {
 .work .content h2 a:hover {
   text-shadow: var(--text-shadow);
 }
-.work details[open]{
+.work details[open] {
   margin-left: 0 !important;
 }
 
