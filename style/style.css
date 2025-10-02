@@ -559,6 +559,10 @@ input:-webkit-autofill:active {
   footer .contact-me-box {
     padding: 30px;
   }
+
+  .homepage img {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -585,8 +589,8 @@ input:-webkit-autofill:active {
     font-size: 80px;
   }
   .homepage img {
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    min-width: 150px;
   }
   .project-description h2 {
     font-size: 50px;
