@@ -191,6 +191,3 @@ let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
-
-// let submissionOkayButtonElement = document.getElementById("submission-okay-button")
-// submissionOkayButtonElement.addEventListener("click", handleSubmissionOkayClick)
