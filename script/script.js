@@ -177,6 +177,16 @@ function activateHamburger() {
   document.querySelector(".nav-menu").classList.toggle("active");
 }
 
+function openResumeTab() {
+  let tabWrapper = document.getElementById("floating-tab-wrapper");
+  tabWrapper.classList.add("active");
+}
+
+function closeResumeTab() {
+  let tabWrapper = document.getElementById("floating-tab-wrapper");
+  tabWrapper.classList.remove("active");
+}
+
 let footerTextElement = document.querySelector(".contact-me-box div");
 let footerSpanElement = document.querySelector(
   ".contact-me-box span.text-muted"
@@ -191,3 +201,9 @@ let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
+
+let openResumeTabButton = document.getElementById("open-tab-button");
+openResumeTabButton.addEventListener("click", openResumeTab);
+
+let closeResumeTabButton = document.getElementById("close-tab-button");
+closeResumeTabButton.addEventListener("click", closeResumeTab);
