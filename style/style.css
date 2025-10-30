@@ -230,6 +230,7 @@ footer .contact-me-box {
   position: fixed;
   width: 100%;
   height: 100%;
+  left: 0;
   bottom: -100%;
   background: linear-gradient(rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.917));
   transition: all ease-in-out 1000ms;
