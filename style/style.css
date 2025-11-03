@@ -125,6 +125,8 @@ nav a {
 }
 .project-category {
   opacity: 0.8;
+  font-size: 20px;
+  line-height: 24px;
   box-shadow: 1px 1px 10px rgba(157, 157, 157, 0.379);
   border-radius: 10px;
   border-left-width: 3px;
@@ -224,6 +226,7 @@ footer .contact-me-box {
 }
 
 #floating-tab-wrapper {
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,44 +238,41 @@ footer .contact-me-box {
   background: linear-gradient(rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.917));
   transition: all ease-in-out 1000ms;
 }
-
 #floating-tab-wrapper.active {
+  visibility: visible;
   bottom: 0;
 }
-
 .floating-tab-content,
-.floating-tab-content h6 {
+.floating-tab-content p {
   border-radius: 8px;
   padding: 2px;
 }
-
 .floating-tab-content,
 #close-tab-button {
   box-shadow: 0 0 9px white;
 }
-
 .floating-tab-content {
   text-align: right;
   padding: 10px;
   border: 1px solid var(--primary-link-color);
   background-color: var(--primary-bg-color);
 }
-
-.floating-tab-content h6 {
+.floating-tab-content p {
   text-align: center;
   width: 100%;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 500;
   background-color: white;
   color: var(--primary-link-color);
   border-left: 10px solid;
   border-right: 10px solid;
 }
-
 #close-tab-button {
   color: var(--primary-link-color);
   border: 1px solid var(--primary-link-color);
   border-radius: 5px;
 }
-
 .floating-tab-content ul {
   margin: 0;
   padding: 20px;
@@ -281,21 +281,17 @@ footer .contact-me-box {
   flex-direction: column;
   gap: 20px;
 }
-
 .floating-tab-content li {
   padding: 0;
   list-style: none;
 }
-
 .floating-tab-content a {
   padding: 10px;
 }
-
 li.downloadables-wrapper {
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.217);
 }
-
 ul.downloadable-resumes {
   flex-direction: row;
 }
@@ -670,7 +666,7 @@ input:-webkit-autofill:active {
     max-width: 400px;
     min-width: 150px;
   }
-  .project-description h2 {
+  .project-description h5 {
     font-size: 50px;
   }
   .projects .right-color-tab {
@@ -717,7 +713,7 @@ input:-webkit-autofill:active {
   .project-description {
     padding: 50px 0 50px 12px;
   }
-  .project-description h2 {
+  .project-description h5 {
     text-align: center;
     font-size: 48px;
   }
@@ -874,7 +870,7 @@ input:-webkit-autofill:active {
   .project-description {
     padding: 40px 0;
   }
-  .project-description h2 {
+  .project-description h5 {
     font-size: 38px;
   }
   .project-description p {
