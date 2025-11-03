@@ -71,7 +71,8 @@ nav a {
   color: #000000;
   transition: all ease-in-out 150ms;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus-visible {
   color: var(--primary-link-color);
   text-decoration: dotted overline;
 }
@@ -114,11 +115,14 @@ nav a {
   color: white;
 }
 .primary-link:hover,
-.projects a:hover {
+.projects a:hover,
+.primary-link:focus-visible,
+.projects a:focus-visible {
   outline-width: 1px;
   outline-style: solid;
 }
-.primary-link:hover {
+.primary-link:hover,
+.primary-link:focus-visible {
   background-color: white;
   outline-color: var(--primary-link-color);
   color: var(--primary-link-color);
@@ -148,14 +152,17 @@ nav a {
 }
 .first-color-group a:hover,
 .work .first-color-group a:hover {
+.first-color-group a:focus-visible,
   color: var(--first-neon-color);
 }
 .second-color-group a:hover,
 .work .second-color-group a:hover {
+.second-color-group a:focus-visible,
   color: var(--second-neon-color);
 }
 .third-color-group a:hover,
 .work .third-color-group a:hover {
+.third-color-group a:focus-visible,
   color: var(--third-neon-color);
 }
 .first-img-wrapper {
@@ -202,13 +209,16 @@ footer .icon-wrapper:hover {
 footer .icon-wrapper:hover > .social-icons {
   transform: rotateZ(-90deg);
 }
-footer .first-img-wrapper .social-icons:hover {
+footer .first-img-wrapper .social-icons:hover,
+footer .first-img-wrapper .social-icons:focus-visible {
   color: var(--first-neon-color);
 }
-footer .second-img-wrapper .social-icons:hover {
+footer .second-img-wrapper .social-icons:hover,
+footer .second-img-wrapper .social-icons:focus-visible {
   color: var(--second-neon-color);
 }
-footer .third-img-wrapper .social-icons:hover {
+footer .third-img-wrapper .social-icons:hover,
+footer .third-img-wrapper .social-icons:focus-visible {
   color: var(--third-neon-color);
 }
 footer .contact-me-box {
@@ -307,7 +317,8 @@ footer p a {
   font-weight: 600;
   transition: all ease-in-out 250ms;
 }
-footer p a:hover {
+footer p a:hover,
+footer p a:focus-visible {
   color: var(--primary-link-color);
 }
 .fa-briefcase,
@@ -325,7 +336,8 @@ footer p a:hover {
 .homepage .top-section h2 {
   font-weight: 400;
 }
-.homepage .primary-link:hover {
+.homepage .primary-link:hover,
+.homepage .primary-link:focus-visible {
   text-shadow: var(--text-shadow);
 }
 .grid-title {
@@ -398,7 +410,8 @@ details ul {
   border-left-style: solid;
   border-left-width: 35px;
 }
-.projects:hover > .color-tab {
+.projects:hover > .color-tab,
+.projects:focus-visible > .color-tab {
   padding: 0 12px;
 }
 
@@ -406,7 +419,8 @@ details ul {
 .homepage .first-color-group a {
   background-color: var(--first-neon-color);
 }
-.homepage .first-color-group a:hover {
+.homepage .first-color-group a:hover,
+.homepage .first-color-group a:focus-visible {
   outline-color: var(--first-neon-color);
   background-color: var(--first-bg-color);
 }
@@ -417,7 +431,8 @@ details ul {
 .homepage .second-color-group a {
   background-color: var(--second-neon-color);
 }
-.homepage .second-color-group a:hover {
+.homepage .second-color-group a:hover,
+.homepage .second-color-group a:focus-visible {
   background-color: var(--second-bg-color);
   outline-color: var(--second-neon-color);
 }
@@ -428,7 +443,8 @@ details ul {
 .homepage .third-color-group a {
   background-color: var(--third-neon-color);
 }
-.homepage .third-color-group a:hover {
+.homepage .third-color-group a:hover,
+.homepage .third-color-group a:focus-visible {
   background-color: var(--third-bg-color);
   outline-color: var(--third-neon-color);
 }
@@ -441,7 +457,8 @@ details ul {
   font-weight: 600;
   transition: all ease-in-out 200ms;
 }
-.grid-footer a:hover {
+.grid-footer a:hover,
+.grid-footer a:focus-visible {
   text-shadow: var(--text-shadow);
 }
 .copyright {
@@ -675,7 +692,8 @@ input:-webkit-autofill:active {
   .projects .left-color-tab {
     padding-left: 32px;
   }
-  .projects:hover > .color-tab {
+  .projects:hover > .color-tab,
+  .projects:focus-visible > .color-tab {
     border-width: 55px;
   }
 
@@ -723,18 +741,10 @@ input:-webkit-autofill:active {
   .projects .left-color-tab {
     padding-left: 22px;
   }
-  .projects:hover > .color-tab {
+  .projects:hover > .color-tab,
+  .projects:focus-visible > .color-tab {
     border-width: 45px;
     padding: 0 12px;
-  }
-  .first-color-group:hover > .color-tab {
-    border-color: var(--first-neon-color);
-  }
-  .second-color-group:hover > .color-tab {
-    border-color: var(--second-neon-color);
-  }
-  .third-color-group:hover > .color-tab {
-    border-color: var(--third-neon-color);
   }
 
   .work main p {
@@ -914,7 +924,8 @@ input:-webkit-autofill:active {
   .projects .left-color-tab {
     padding-left: 27px;
   }
-  .projects:hover > .color-tab {
+  .projects:hover > .color-tab,
+  .projects:focus-visible > .color-tab {
     border-width: 35px;
   }
 
