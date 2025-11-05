@@ -567,21 +567,28 @@ details ul {
 .text-link {
   transition: all ease-in-out 500ms;
 }
-.text-link:hover {
+.text-link:hover,
+.text-link:focus-visible {
   text-shadow: var(--text-shadow);
-}
-.first-link:hover {
-  color: var(--first-neon-color);
-}
-.second-link:hover {
-  color: var(--second-neon-color);
-}
-.third-link:hover {
-  color: var(--third-neon-color);
-}
-.form-link:focus-visible {
-  outline: 1px solid var(--first-neon-color);
   padding: 3px;
+  outline-width: 1px;
+  outline-style: solid;
+}
+.first-link:hover,
+.first-link:focus-visible,
+.form-link:focus-visible {
+  color: var(--first-neon-color);
+  outline-color: var(--first-neon-color);
+}
+.second-link:hover,
+.second-link:focus-visible {
+  color: var(--second-neon-color);
+  outline-color: var(--second-neon-color);
+}
+.third-link:hover,
+.third-link:focus-visible {
+  color: var(--third-neon-color);
+  outline-color: var(--third-neon-color);
 }
 .contact-form {
   background-color: var(--primary-bg-color);
