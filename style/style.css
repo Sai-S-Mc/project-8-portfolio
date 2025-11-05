@@ -151,18 +151,21 @@ nav a {
   background-color: var(--third-bg-color);
 }
 .first-color-group a:hover,
-.work .first-color-group a:hover {
 .first-color-group a:focus-visible,
+.work .first-color-group a:hover,
+.work .first-color-group a:focus-visible {
   color: var(--first-neon-color);
 }
 .second-color-group a:hover,
-.work .second-color-group a:hover {
 .second-color-group a:focus-visible,
+.work .second-color-group a:hover,
+.work .second-color-group a:focus-visible {
   color: var(--second-neon-color);
 }
 .third-color-group a:hover,
-.work .third-color-group a:hover {
 .third-color-group a:focus-visible,
+.work .third-color-group a:hover,
+.work .third-color-group a:focus-visible {
   color: var(--third-neon-color);
 }
 .first-img-wrapper {
@@ -513,7 +516,8 @@ details ul {
 .work .img-wrapper {
   transition: var(--common-transition);
 }
-.work .img-wrapper:hover {
+.work .img-wrapper:hover,
+.work .img-wrapper:focus-visible {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
 }
 .work details {
@@ -526,7 +530,8 @@ details ul {
 .work .content h2 a {
   transition: all ease-in-out 200ms;
 }
-.work .content h2 a:hover {
+.work .content h2 a:hover,
+.work .content h2 a:focus-visible {
   text-shadow: var(--text-shadow);
 }
 .work details[open] {
