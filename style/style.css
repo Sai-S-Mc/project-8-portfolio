@@ -1,3 +1,7 @@
+*{
+box-sizing: border-box;
+}
+
 :root {
   --default-font: "Poppins", serif;
   --heading-font: "Playfair Display", serif;
