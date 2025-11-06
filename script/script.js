@@ -203,7 +203,7 @@ hamburgerElement.addEventListener("click", activateHamburger);
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
 
 let openResumeTabButton = document.getElementById("open-tab-button");
-openResumeTabButton.addEventListener("click", openResumeTab);
+openResumeTabButton?.addEventListener("click", openResumeTab);
 
 let closeResumeTabButton = document.getElementById("close-tab-button");
-closeResumeTabButton.addEventListener("click", closeResumeTab);
+closeResumeTabButton?.addEventListener("click", closeResumeTab);
