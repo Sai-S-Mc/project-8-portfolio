@@ -547,8 +547,11 @@ details ul {
   text-align: center;
   margin: 0 auto;
 }
+.contact h2{
+  font-size: 20px;
+  line-height: 24px;
+}
 .contact main a {
-  text-decoration: none;
   color: #000000;
 }
 .contact .icon-wrapper {
