@@ -234,6 +234,7 @@
                     id="email"
                     name="email"
                     required
+                    autocomplete="email"
                   />
                 </div>
                 <div class="col-12">
@@ -248,7 +249,12 @@
                     required
                   ></textarea>
                 </div>
-                <input type="checkbox" name="botcheck" class="hidden" />
+                <input
+                  type="checkbox"
+                  aria-label="botcheck"
+                  name="botcheck"
+                  class="hidden"
+                />
                 <div class="col-12 mt-5">
                   <div class="captcha-check">
                     <div class="h-captcha" data-captcha="true"></div>
@@ -268,10 +274,10 @@
                 </div>
               </form>
             </div>
-            <h6
+            <p
               class="post-submit-section rounded p-2 pt-5 pb-5 fw-medium hidden"
               id="post-submit-section"
-            ></h6>
+            ></p>
           </div>
         </main>
       </div>

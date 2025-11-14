@@ -1,5 +1,5 @@
-*{
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 :root {
@@ -9,6 +9,10 @@ box-sizing: border-box;
   --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   --text-shadow: 1px 1px 0 #00000025, 1px 1px 0 #00000025, 1px 1px 0 #00000025,
     1px 1px 0 #00000025;
+  --gray-text-shadow: 1px 1px 0 #e8e8e825, 1px 1px 0 #e8e8e825,
+    1px 1px 0 #e8e8e825, 1px 1px 0 #e8e8e825;
+  --white-text-shadow: 1px 1px 0 white, 1px 1px 0 white, 1px 1px 0 white,
+    1px 1px 0 white;
   --primary-link-color: #e03662;
   --primary-bg-color: #f148e92e;
   --secondary-bg-color: rgba(254, 201, 233, 0.974);
@@ -116,7 +120,7 @@ nav a {
 }
 .primary-link {
   background-color: var(--primary-link-color);
-  color: white;
+  color: black;
 }
 .primary-link:hover,
 .projects a:hover,
@@ -384,12 +388,15 @@ details summary::before {
   content: "+";
   margin-right: 10px;
   font-size: 18px;
-  color: white;
   border-radius: 50%;
   padding: 0 7px;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--gray-text-shadow);
   box-shadow: var(--box-shadow);
   background-color: var(--primary-bg-color);
+}
+.third-color-group details summary::before,
+.third-color-group.projects a {
+  text-shadow: var(--white-text-shadow);
 }
 details[open] summary::before {
   content: "-";
@@ -403,7 +410,10 @@ details ul {
   margin-top: 8px;
 }
 .projects a {
-  color: white;
+  text-shadow: var(--gray-text-shadow);
+}
+.projects a:hover,
+.projects a:focus-visible {
   text-shadow: var(--text-shadow);
 }
 .projects .color-tab {
@@ -460,7 +470,7 @@ details ul {
 }
 .grid-footer a {
   text-decoration: none;
-  color: var(--primary-link-color);
+  color: rgb(179 2 31);
   font-weight: 600;
   transition: all ease-in-out 200ms;
 }
@@ -547,7 +557,7 @@ details ul {
   text-align: center;
   margin: 0 auto;
 }
-.contact h2{
+.contact h2 {
   font-size: 20px;
   line-height: 24px;
 }
@@ -607,6 +617,10 @@ details ul {
 .contact-form .post-submit-section {
   border: 1px solid white;
   box-shadow: 1px 1px 10px white;
+}
+.contact-form .post-submit-section {
+  font-weight: 500;
+  line-height: 19px;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
