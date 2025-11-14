@@ -14,14 +14,15 @@
   --white-text-shadow: 1px 1px 0 white, 1px 1px 0 white, 1px 1px 0 white,
     1px 1px 0 white;
   --primary-link-color: #e03662;
-  --primary-bg-color: #f148e92e;
-  --secondary-bg-color: rgba(254, 201, 233, 0.974);
+  --primary-bg-color: #fdedfb;
+  --secondary-bg-color: rgba(251, 212, 236, 0.944);
   --first-bg-color: #fff3ff;
   --second-bg-color: #ffede2;
   --third-bg-color: #fbf7e4;
   --first-neon-color: #f94090;
   --second-neon-color: #ff5e00;
   --third-neon-color: #fed700;
+  --highlight-text: rgb(179 2 31);
   --common-transition: all ease-in-out 600ms;
 }
 
@@ -85,7 +86,8 @@ nav a {
   text-decoration: dotted overline;
 }
 .nav-link.current {
-  color: var(--primary-link-color);
+  color: var(--highlight-text);
+  font-weight: 500;
 }
 .hamburger {
   display: none;
@@ -470,7 +472,7 @@ details ul {
 }
 .grid-footer a {
   text-decoration: none;
-  color: rgb(179 2 31);
+  color: var(--highlight-text);
   font-weight: 600;
   transition: all ease-in-out 200ms;
 }
@@ -630,12 +632,11 @@ input:-webkit-autofill:active {
 }
 .form-control {
   font-size: 15px;
-  caret-color: var(--first-neon-color);
   caret-color: var(--primary-link-color);
 }
 .form-control:focus {
   box-shadow: 1px 1px 15px white;
-  border-color: var(--primary-bg-color);
+  border-color: var(--primary-link-color);
 }
 .contact-form span {
   color: var(--primary-link-color);
