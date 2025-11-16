@@ -301,7 +301,7 @@ footer .contact-me-box {
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
 }
 .floating-tab-content li {
@@ -310,13 +310,6 @@ footer .contact-me-box {
 }
 .floating-tab-content a {
   padding: 10px;
-}
-li.downloadables-wrapper {
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.217);
-}
-ul.downloadable-resumes {
-  flex-direction: row;
 }
 
 footer p {
@@ -394,7 +387,6 @@ details summary::before {
   padding: 0 7px;
   text-shadow: var(--gray-text-shadow);
   box-shadow: var(--box-shadow);
-  background-color: var(--primary-bg-color);
 }
 .third-color-group details summary::before,
 .third-color-group.projects a {
@@ -489,6 +481,10 @@ details ul {
 .about {
   background: linear-gradient(to top, #fdcbf18c 0%, #fdcbf181 1%, #e6dee9 100%);
   background-size: 100%;
+}
+.about details summary::before{
+  outline: 2px solid var(--primary-link-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.577);
 }
 .about main {
   font-size: 15px;
