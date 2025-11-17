@@ -293,6 +293,7 @@ footer .contact-me-box {
 }
 #close-tab-button {
   color: var(--primary-link-color);
+  background-color: white;
   border: 1px solid var(--primary-link-color);
   border-radius: 5px;
 }
@@ -388,6 +389,11 @@ details summary::before {
   text-shadow: var(--gray-text-shadow);
   box-shadow: var(--box-shadow);
 }
+.work details summary::before,
+.about details summary::before {
+  outline: 2px solid var(--primary-link-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.577);
+}
 .third-color-group details summary::before,
 .third-color-group.projects a {
   text-shadow: var(--white-text-shadow);
@@ -481,10 +487,6 @@ details ul {
 .about {
   background: linear-gradient(to top, #fdcbf18c 0%, #fdcbf181 1%, #e6dee9 100%);
   background-size: 100%;
-}
-.about details summary::before{
-  outline: 2px solid var(--primary-link-color);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.577);
 }
 .about main {
   font-size: 15px;
