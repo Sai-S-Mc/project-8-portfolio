@@ -172,9 +172,16 @@ function toggleClassBasedOnViewportWidth() {
   }
 }
 
+function hamburgerMenuAria() {
+  return hamburgerElement.classList.contains("active")
+    ? "Close navigation menu"
+    : "Expand navigation menu";
+}
+
 function activateHamburger() {
   document.querySelector(".hamburger").classList.toggle("active");
   document.querySelector(".nav-menu").classList.toggle("active");
+  hamburgerElement.setAttribute("aria-label", hamburgerMenuAria());
 }
 
 function openResumeTab() {
@@ -202,7 +209,8 @@ hamburgerElement.addEventListener("click", activateHamburger);
 hamburgerElement.addEventListener("keypress", activateHamburger);
 
 let logo = document.querySelector("p.logo a");
-logo.addEventListener("focusout", activateHamburger);
+window.innerWidth <= 800 &&
+  logo.addEventListener("focusout", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
 
