@@ -199,6 +199,10 @@ toggleClassBasedOnViewportWidth();
 
 let hamburgerElement = document.querySelector(".hamburger");
 hamburgerElement.addEventListener("click", activateHamburger);
+hamburgerElement.addEventListener("keypress", activateHamburger);
+
+let logo = document.querySelector("p.logo a");
+logo.addEventListener("focusout", activateHamburger);
 
 window.addEventListener("resize", toggleClassBasedOnViewportWidth);
 
